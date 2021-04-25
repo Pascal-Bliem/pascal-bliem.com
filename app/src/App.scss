@@ -1,0 +1,37 @@
+// import Google font by name
+@mixin google-font($font) {
+  $font: unquote($font);
+  @import url(https://fonts.googleapis.com/css?family=#{$font});
+}
+
+// import fonts
+@include google-font("Nunito+Sans");
+
+// sizes
+$font-size: 16px;
+$default-breakpoint: 1028px;
+$max-column-width: 45em;
+
+// color variables
+$primary-color: #eeeeee;
+$secondary-color: #00adb5;
+
+// general CSS that should apply in all places
+* {
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+a {
+  color: grey;
+}
+
+.App {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}

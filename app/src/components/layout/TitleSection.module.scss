@@ -1,0 +1,228 @@
+$text-color: #eeeeee;
+$default-breakpoint: 1024px;
+$large-screen-breakpoint: 1400px;
+
+.titleSection {
+  width: 100%;
+  position: relative;
+  background-color: #0a3d5c;
+  /* image by Markus Spiske on Unsplash  https://unsplash.com/photos/Fa0pTKuoDVY*/
+  background: url("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  min-height: 30em;
+  z-index: 1;
+
+  @media (max-width: $large-screen-breakpoint) {
+    height: 100vh;
+  }
+}
+
+/* this makes the banner image look a little 
+darker by overlaying a pseudo element with 
+an increasing opacity animation */
+.titleSection::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  z-index: -1;
+  opacity: 0;
+  animation: darken-banner 1s linear 1s forwards;
+}
+
+@keyframes darken-banner {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.65;
+  }
+}
+
+.navLinkContainer {
+  text-align: center;
+  margin-top: 3%;
+
+  @media (max-width: $default-breakpoint) {
+    display: none;
+  }
+}
+
+.navLink {
+  font-size: 1.2rem;
+  color: darken($color: $text-color, $amount: 25%);
+  padding: 0 20px;
+}
+
+.titleContainer {
+  text-align: center;
+  overflow-wrap: normal;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.titleHeading {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  color: $text-color;
+  font-size: 5em;
+  padding: 5% 5% 2%;
+  opacity: 0;
+  transform: translateY(+1.5em);
+  animation: fly-in 1s 1s ease-out forwards;
+
+  @media (max-width: $default-breakpoint) {
+    margin-top: 25%;
+  }
+}
+
+@keyframes fly-in {
+  0% {
+    opacity: 0;
+    transform: translateY(+1.5em);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.titleSubheading {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2em;
+  color: darken($color: $text-color, $amount: 25%);
+
+  // Ensures the content is not revealed until the animation
+  overflow: hidden;
+  // The typewriter cursor
+  border-right: 0.15em solid $text-color;
+  // Keeps the content on a single line
+  white-space: nowrap;
+  //  Gives that scrolling effect as the typing happens
+  margin: 0 auto;
+  margin-bottom: 1rem;
+
+  @media (max-width: $default-breakpoint) {
+    margin: 1.5rem auto;
+  }
+
+  letter-spacing: 0.1em;
+
+  visibility: hidden;
+}
+
+// make the typing happen consecutively per line
+#tsh1 {
+  animation: typing-lg 2s 2s steps(30, end) forwards, blink-caret 0.5s 2s 4;
+
+  @media (max-width: $default-breakpoint) {
+    animation: typing-sm 2s 2s steps(30, end) forwards, blink-caret 0.5s 2s 4;
+  }
+}
+
+#tsh2 {
+  animation: typing-lg 2s 4s steps(30, end) forwards, blink-caret 0.5s 4s 4;
+
+  @media (max-width: $default-breakpoint) {
+    animation: typing-sm 2s 4s steps(30, end) forwards, blink-caret 0.5s 4s 4;
+  }
+}
+
+#tsh3 {
+  animation: typing-lg 2s 6s steps(30, end) forwards, blink-caret 0.5s 6s 4;
+
+  @media (max-width: $default-breakpoint) {
+    animation: typing-sm 2s 6s steps(30, end) forwards, blink-caret 0.5s 6s 4;
+  }
+}
+
+//  The typing effect for large screen
+@keyframes typing-lg {
+  0% {
+    visibility: visible;
+    width: 0;
+  }
+
+  100% {
+    visibility: visible;
+    border-right: none;
+  }
+
+  100% {
+    width: 400px;
+  }
+}
+
+//  The typing effect for small screen
+@keyframes typing-sm {
+  0% {
+    visibility: visible;
+    width: 0;
+  }
+
+  100% {
+    visibility: visible;
+    border-right: none;
+    width: 100%;
+  }
+}
+
+//  The typewriter cursor effect
+@keyframes blink-caret {
+  0%,
+  100% {
+    border-color: $text-color;
+  }
+
+  50% {
+    border-color: transparent;
+  }
+}
+
+.moreButton {
+  border: none;
+  font-size: 20px;
+  background-color: #00adb5;
+  border-radius: 50%;
+  color: $text-color;
+  border-radius: 30px;
+  padding: 0.8rem 1.5rem;
+  margin-top: 4rem;
+  opacity: 0;
+  animation: button-appear 0.3s 8s steps(30, end) forwards;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: lighten($color: #00adb5, $amount: 5%);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  @media (max-width: $large-screen-breakpoint) {
+    margin-top: 2rem;
+  }
+}
+
+@keyframes button-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
