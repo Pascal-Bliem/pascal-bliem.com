@@ -1,0 +1,93 @@
+$text-color: #2c3e50;
+$light-text-color: #798a9a;
+$default-breakpoint: 1024px;
+$large-screen-breakpoint: 1400px;
+
+.background {
+  width: 100%;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  margin-top: 3rem;
+}
+
+.sectionContainer {
+  color: $text-color;
+  text-align: center;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meImage {
+  margin: 10% 0;
+  width: 300px;
+  border-radius: 50%;
+
+  @media (max-width: $large-screen-breakpoint) {
+    width: 250px;
+    margin: 20% 0;
+  }
+}
+
+.sectionSeparator {
+  margin-top: 3rem;
+  width: 10%;
+  height: 4px;
+  border: none;
+  background-color: #00adb5;
+}
+
+.paragraph {
+  text-align: justify;
+  color: $light-text-color;
+}
+
+.sectionHeader {
+  margin-bottom: 3rem;
+}
+
+.cvButton {
+  border: none;
+  font-size: 16px;
+  background-color: #00adb5;
+  border-radius: 50%;
+  border-radius: 30px;
+  padding: 0.5rem 1.5rem;
+  margin-top: 1rem;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: lighten($color: #00adb5, $amount: 5%);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  @media (max-width: $default-breakpoint) {
+    margin: auto;
+  }
+}
+
+.iconContainer {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow-wrap: normal;
+}
+
+.contactIcon {
+  color: #00adb5;
+  font-size: 30px;
+  padding: 0 0.5rem;
+  margin-top: 1rem;
+}

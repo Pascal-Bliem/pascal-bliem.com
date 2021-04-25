@@ -1,0 +1,26 @@
+$text-color: #2c3e50;
+$light-text-color: #798a9a;
+$default-breakpoint: 1024px;
+$large-screen-breakpoint: 1400px;
+
+.sectionContainer {
+  color: $text-color;
+  text-align: center;
+}
+
+.sectionSeparator {
+  margin-top: 3rem;
+  width: 5%;
+  height: 4px;
+  border: none;
+  background-color: #00adb5;
+}
+
+.sectionHeader {
+  margin-bottom: 3rem;
+}
+
+.sectionFooter {
+  color: $light-text-color;
+  padding-top: 2rem;
+}

@@ -3,6 +3,7 @@ import styles from "./Home.module.scss";
 import Navbar from "../layout/Navbar";
 import TitleSection from "../layout/TitleSection";
 import ProjectSection from "../layout/ProjectSection";
+import AboutMeSection from "../layout/AboutMeSection";
 
 const Home = () => {
   return (
@@ -10,12 +11,8 @@ const Home = () => {
       <Navbar />
       <TitleSection />
       <ProjectSection />
-      <h1 id="about-me" style={{ marginTop: "10rem" }}>
-        About me Section
-      </h1>
-      <h1 id="projects" style={{ marginTop: "10rem" }}>
-        Portfolio Project Section
-      </h1>
+      <AboutMeSection />
+
       <h1 id="skills" style={{ marginTop: "10rem" }}>
         Skills Section
       </h1>

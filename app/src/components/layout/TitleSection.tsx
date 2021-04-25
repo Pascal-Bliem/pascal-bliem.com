@@ -32,7 +32,6 @@ const TitleSection = () => {
             <h3 className={styles.titleSubheading} id={styles.tsh3}>
               {"Web Developer"}
             </h3>
-            {/* TODO: add "more on me button here" */}
             <button
               className={styles.moreButton}
               onClick={() => (window.location.href = "/#about-me")}
