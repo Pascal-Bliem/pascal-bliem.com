@@ -68,6 +68,14 @@ const Navbar = () => {
             <li className={styles.navUlLi}>
               <a
                 className={styles.text + " " + styles.navUlLiA}
+                href="/#skills"
+              >
+                Skills
+              </a>
+            </li>
+            <li className={styles.navUlLi}>
+              <a
+                className={styles.text + " " + styles.navUlLiA}
                 href="/#contact"
               >
                 Contact
@@ -87,6 +95,11 @@ const Navbar = () => {
         <li>
           <a className={styles.text} href="/#about-me">
             About me
+          </a>
+        </li>
+        <li>
+          <a className={styles.text} href="/#skills">
+            Skills
           </a>
         </li>
         <li>

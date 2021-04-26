@@ -31,7 +31,7 @@ const AboutMeSection = () => {
               languages (both natural and programming ones) and making music.
             </p>
 
-            <p className={styles.iconContainer}>
+            <div className={styles.iconContainer}>
               <div className="col s12 m6">
                 <button className={styles.cvButton}>
                   <a
@@ -59,7 +59,7 @@ const AboutMeSection = () => {
                   <i className={`fas fa-envelope ${styles.contactIcon}`}></i>
                 </a>
               </div>
-            </p>
+            </div>
           </div>
         </div>
       </div>

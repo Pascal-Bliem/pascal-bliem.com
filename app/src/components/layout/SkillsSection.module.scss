@@ -1,0 +1,56 @@
+$text-color: #2c3e50;
+$light-text-color: #798a9a;
+$default-breakpoint: 1024px;
+$large-screen-breakpoint: 1400px;
+
+.sectionContainer {
+  color: $text-color;
+  text-align: center;
+}
+
+.sectionSeparator {
+  margin-top: 3rem;
+  width: 5%;
+  height: 4px;
+  border: none;
+  background-color: #00adb5;
+
+  @media (max-width: $default-breakpoint) {
+    width: 15%;
+  }
+}
+
+.sectionHeader {
+  margin-bottom: 3rem;
+}
+
+.modalParagraph {
+  text-align: justify;
+}
+
+.fillerContainer {
+  height: 400px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: $large-screen-breakpoint) {
+    height: 200px;
+  }
+
+  @media (max-width: $default-breakpoint) {
+    display: none;
+  }
+}
+
+.fillerIcon {
+  color: #00adb5;
+  margin: auto;
+  font-size: 50px;
+  margin-top: 175px;
+
+  @media (max-width: $default-breakpoint) {
+    display: none;
+  }
+}

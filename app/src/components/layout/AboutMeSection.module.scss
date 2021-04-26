@@ -39,6 +39,10 @@ $large-screen-breakpoint: 1400px;
   height: 4px;
   border: none;
   background-color: #00adb5;
+
+  @media (max-width: $default-breakpoint) {
+    width: 15%;
+  }
 }
 
 .paragraph {
@@ -77,7 +81,7 @@ $large-screen-breakpoint: 1400px;
 }
 
 .iconContainer {
-  margin-top: 2rem;
+  margin: 2rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

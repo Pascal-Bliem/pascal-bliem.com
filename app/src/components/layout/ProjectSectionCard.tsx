@@ -27,7 +27,7 @@ const ProjectSectionCard = ({
             </span>
           </div>
           <div className="card-content">
-            <p>{description}</p>
+            <p className={styles.cardText}>{description}</p>
           </div>
         </div>
       </a>

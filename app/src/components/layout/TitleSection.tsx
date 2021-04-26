@@ -13,6 +13,9 @@ const TitleSection = () => {
             <a className={styles.navLink} href="/#about-me">
               About me
             </a>
+            <a className={styles.navLink} href="/#skills">
+              Skills
+            </a>
             <a className={styles.navLink} href="/#contact">
               Contact
             </a>

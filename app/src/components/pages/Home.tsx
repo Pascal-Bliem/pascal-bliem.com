@@ -4,6 +4,7 @@ import Navbar from "../layout/Navbar";
 import TitleSection from "../layout/TitleSection";
 import ProjectSection from "../layout/ProjectSection";
 import AboutMeSection from "../layout/AboutMeSection";
+import SkillsSection from "../layout/SkillsSection";
 
 const Home = () => {
   return (
@@ -12,10 +13,8 @@ const Home = () => {
       <TitleSection />
       <ProjectSection />
       <AboutMeSection />
+      <SkillsSection />
 
-      <h1 id="skills" style={{ marginTop: "10rem" }}>
-        Skills Section
-      </h1>
       <h1 id="contact" style={{ marginTop: "10rem" }}>
         Contact Section
       </h1>
