@@ -1,60 +1,7 @@
-$default-breakpoint: 1024px;
-$large-screen-breakpoint: 1400px;
+@import "../../variables";
 
-.cardLink {
-  display: block;
-}
-
-.cardImageGrad {
-  display: block;
-  position: relative;
-}
-
-.cardImageGrad::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: -moz-linear-gradient(
-    top,
-    rgba(0, 0, 0, 0) 50%,
-    rgba(0, 0, 0, 0.3) 60%,
-    rgba(0, 0, 0, 0.6) 70%,
-    rgba(0, 0, 0, 0.8) 80%,
-    rgba(0, 0, 0, 0.9) 90%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    top,
-    rgba(0, 0, 0, 0) 50%,
-    rgba(0, 0, 0, 0.3) 60%,
-    rgba(0, 0, 0, 0.6) 70%,
-    rgba(0, 0, 0, 0.8) 80%,
-    rgba(0, 0, 0, 0.9) 90%,
-    rgba(0, 0, 0, 1) 100%
-  );
-}
-
-.cardImage {
-  display: block;
-  height: 300px;
-  object-fit: cover;
-  overflow: hidden;
-
-  @media (max-width: $large-screen-breakpoint) {
-    height: 200px;
-  }
-
-  @media (max-width: $default-breakpoint) {
-    height: 300px;
-  }
-}
-
-.cardText {
-  text-align: justify;
-}
+// inherit card styles from the ProjectSectionCard
+@import "./ProjectSectionCard.module.scss";
 
 .modalContainer {
   max-width: 700px;

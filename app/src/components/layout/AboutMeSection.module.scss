@@ -1,20 +1,7 @@
-$text-color: #2c3e50;
-$light-text-color: #798a9a;
-$default-breakpoint: 1024px;
-$large-screen-breakpoint: 1400px;
+@import "../../variables";
 
-.background {
-  width: 100%;
-  background-color: #f8f9fa;
-  border-top: 1px solid #dee2e6;
-  border-bottom: 1px solid #dee2e6;
-  margin-top: 3rem;
-}
-
-.sectionContainer {
-  color: $text-color;
-  text-align: center;
-}
+// inherit default section styles
+@import "./SectionStyles";
 
 .imageContainer {
   display: flex;
@@ -34,30 +21,15 @@ $large-screen-breakpoint: 1400px;
 }
 
 .sectionSeparator {
-  margin-top: 3rem;
+  // extend sectionSeparator from imported styles
+  @extend .sectionSeparator;
   width: 10%;
-  height: 4px;
-  border: none;
-  background-color: #00adb5;
-
-  @media (max-width: $default-breakpoint) {
-    width: 15%;
-  }
-}
-
-.paragraph {
-  text-align: justify;
-  color: $light-text-color;
-}
-
-.sectionHeader {
-  margin-bottom: 3rem;
 }
 
 .cvButton {
   border: none;
   font-size: 16px;
-  background-color: #00adb5;
+  background-color: $secondary-color;
   border-radius: 50%;
   border-radius: 30px;
   padding: 0.5rem 1.5rem;
@@ -68,7 +40,7 @@ $large-screen-breakpoint: 1400px;
   }
 
   &:hover {
-    background-color: lighten($color: #00adb5, $amount: 5%);
+    background-color: lighten($color: $secondary-color, $amount: 5%);
   }
 
   &:active {
@@ -90,7 +62,7 @@ $large-screen-breakpoint: 1400px;
 }
 
 .contactIcon {
-  color: #00adb5;
+  color: $secondary-color;
   font-size: 30px;
   padding: 0 0.5rem;
   margin-top: 1rem;

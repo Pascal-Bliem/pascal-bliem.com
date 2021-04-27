@@ -7,14 +7,8 @@
 // import fonts
 @include google-font("Nunito+Sans");
 
-// sizes
-$font-size: 16px;
-$default-breakpoint: 1028px;
-$max-column-width: 45em;
-
-// color variables
-$primary-color: #eeeeee;
-$secondary-color: #00adb5;
+// import variables
+@import "variables";
 
 // general CSS that should apply in all places
 * {
@@ -24,10 +18,16 @@ $secondary-color: #00adb5;
 html {
   position: relative;
   min-height: 100%;
+  scroll-behavior: smooth;
+  hyphens: auto;
 }
 
 a {
-  color: #798a9a;
+  color: $light-text-color;
+}
+
+a.highlight-link {
+  color: lighten($color: $light-text-color, $amount: 25%);
 }
 
 .App {

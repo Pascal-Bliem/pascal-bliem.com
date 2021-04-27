@@ -1,0 +1,34 @@
+@import "../../variables";
+
+// inherit default section styles
+@import "./SectionStyles";
+
+.paragraph {
+  @extend .paragraph;
+  margin-right: 10%;
+
+  @media (max-width: $default-breakpoint) {
+    margin-right: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 5rem;
+  }
+}
+
+.bioListContainer {
+  text-align: left;
+}
+
+.bioList {
+  margin-left: 10%;
+
+  @media (max-width: $default-breakpoint) {
+    margin-left: 0;
+  }
+}
+
+.bioYear {
+  padding-top: 1rem;
+  font-weight: 600;
+}

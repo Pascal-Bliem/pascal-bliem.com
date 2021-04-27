@@ -1,0 +1,18 @@
+@import "../../variables";
+
+// inherit default section styles
+@import "./SectionStyles";
+
+.background {
+  @extend .background;
+  margin-top: 0;
+  background-color: #393e46;
+  color: $primary-color;
+}
+
+.sectionFooter {
+  @extend .sectionFooter;
+  color: $primary-color;
+  max-width: 950px;
+  margin: auto;
+}

@@ -5,6 +5,10 @@ import TitleSection from "../layout/TitleSection";
 import ProjectSection from "../layout/ProjectSection";
 import AboutMeSection from "../layout/AboutMeSection";
 import SkillsSection from "../layout/SkillsSection";
+import BlogSection from "../layout/BlogSection";
+import ContactSection from "../layout/ContactSection";
+import BioSection from "../layout/BioSection";
+import Footer from "../layout/Footer";
 
 const Home = () => {
   return (
@@ -14,13 +18,10 @@ const Home = () => {
       <ProjectSection />
       <AboutMeSection />
       <SkillsSection />
-
-      <h1 id="contact" style={{ marginTop: "10rem" }}>
-        Contact Section
-      </h1>
-      <h1 id="bio" style={{ marginTop: "10rem" }}>
-        Short Bio Section
-      </h1>
+      <BlogSection />
+      <ContactSection />
+      <BioSection />
+      <Footer />
     </div>
   );
 };

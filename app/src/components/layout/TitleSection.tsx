@@ -16,6 +16,9 @@ const TitleSection = () => {
             <a className={styles.navLink} href="/#skills">
               Skills
             </a>
+            <a className={styles.navLink} href="/#blog">
+              Blog
+            </a>
             <a className={styles.navLink} href="/#contact">
               Contact
             </a>
@@ -30,7 +33,7 @@ const TitleSection = () => {
               {"Data Scientist"}
             </h3>
             <h3 className={styles.titleSubheading} id={styles.tsh2}>
-              {"ML Engineer"}
+              {"AI/ML Engineer"}
             </h3>
             <h3 className={styles.titleSubheading} id={styles.tsh3}>
               {"Web Developer"}

@@ -1,28 +1,7 @@
-$text-color: #2c3e50;
-$light-text-color: #798a9a;
-$default-breakpoint: 1024px;
-$large-screen-breakpoint: 1400px;
+@import "../../variables";
 
-.sectionContainer {
-  color: $text-color;
-  text-align: center;
-}
-
-.sectionSeparator {
-  margin-top: 3rem;
-  width: 5%;
-  height: 4px;
-  border: none;
-  background-color: #00adb5;
-
-  @media (max-width: $default-breakpoint) {
-    width: 15%;
-  }
-}
-
-.sectionHeader {
-  margin-bottom: 3rem;
-}
+// inherit default section styles
+@import "./SectionStyles";
 
 .modalParagraph {
   text-align: justify;
@@ -45,7 +24,7 @@ $large-screen-breakpoint: 1400px;
 }
 
 .fillerIcon {
-  color: #00adb5;
+  color: $secondary-color;
   margin: auto;
   font-size: 50px;
   margin-top: 175px;

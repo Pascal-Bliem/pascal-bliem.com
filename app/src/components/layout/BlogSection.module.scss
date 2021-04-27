@@ -1,0 +1,9 @@
+@import "../../variables";
+
+// inherit default section styles
+@import "./SectionStyles";
+
+.sectionFooter {
+  @extend .sectionFooter;
+  margin-bottom: 3rem;
+}

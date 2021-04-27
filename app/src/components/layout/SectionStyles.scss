@@ -1,0 +1,40 @@
+@import "../../variables";
+
+.background {
+  width: 100%;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  margin-top: 3rem;
+}
+
+.sectionContainer {
+  color: $text-color;
+  text-align: center;
+}
+
+.sectionSeparator {
+  margin-top: 3rem;
+  width: 5%;
+  height: 4px;
+  border: none;
+  background-color: $secondary-color;
+
+  @media (max-width: $default-breakpoint) {
+    width: 15%;
+  }
+}
+
+.paragraph {
+  text-align: justify;
+  color: $light-text-color;
+}
+
+.sectionHeader {
+  margin-bottom: 3rem;
+}
+
+.sectionFooter {
+  color: $light-text-color;
+  padding-top: 2rem;
+}

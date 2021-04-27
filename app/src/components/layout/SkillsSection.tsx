@@ -154,7 +154,7 @@ const SkillsSection = () => {
           imageUrl="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1404&q=80"
           title="Teaching & Volunteering"
           iconName="teaching"
-          description="I used to teach English, German, maths, science, and coding, e.g. at ILEC Hanoi, Jolly English Club, Jogjakarta Community School, or Project Child Indonesia"
+          description="I used to teach English, German, maths, science, and coding, e.g. at ILEC Hanoi, Jolly English Club, Jogjakarta Community School, or Project Child Indonesia."
           longDescription={
             <Fragment>
               <p className={styles.modalParagraph}>
@@ -177,7 +177,7 @@ const SkillsSection = () => {
                 physics, and chemistry at{" "}
                 <a href="https://jogjacommunityschool.org/">
                   Jogjakarta Community School
-                </a>{" "}
+                </a>
                 , then about health, hygiene, and environmental sustainability
                 at{" "}
                 <a href="https://projectchild.ngo/">Project Child Indonesia</a>.
@@ -307,7 +307,7 @@ const SkillsSection = () => {
                 and{" "}
                 <a href="https://www.physics.uu.se/research/materials-physics+/">
                   Uppsala University
-                </a>{" "}
+                </a>
                 , and overall, author or coauthor 9{" "}
                 <a href="https://github.com/Pascal-Bliem/my-papers-and-theses#peer-reviewed-publications">
                   peer-reviewed publications

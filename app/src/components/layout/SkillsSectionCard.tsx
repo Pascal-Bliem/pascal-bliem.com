@@ -23,7 +23,7 @@ const SkillsSectionCard = ({
           className={`modal-trigger ${styles.cardLink}`}
           href={`#modal_${btoa(title)}`}
         >
-          <div className="card medium">
+          <div className="card medium hoverable">
             <div className={`card-image`}>
               <div className={styles.cardImageGrad}>
                 <img className={styles.cardImage} src={imageUrl} alt={title} />

@@ -17,7 +17,7 @@ const ProjectSectionCard = ({
   return (
     <div className="col s12 s12 l6 xl4">
       <a className={styles.cardLink} href={linkUrl}>
-        <div className="card medium">
+        <div className="card medium hoverable">
           <div className={`card-image`}>
             <div className={styles.cardImageGrad}>
               <img className={styles.cardImage} src={imageUrl} alt={title} />
