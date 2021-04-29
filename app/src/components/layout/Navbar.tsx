@@ -2,7 +2,12 @@ import React, { Fragment, useEffect } from "react";
 import "./Navbar.module.scss";
 import styles from "./Navbar.module.scss";
 
-const Navbar = () => {
+export interface NavbarProps {
+  fullyHideHeight: number;
+  initialFullyHide?: boolean;
+}
+
+const Navbar = ({ fullyHideHeight, initialFullyHide }: NavbarProps) => {
   useEffect(() => {
     const navbar = document.getElementById("navbar") as HTMLElement;
     // new class for hidden navbar
@@ -13,7 +18,7 @@ const Navbar = () => {
     // when scrolling up
     let lastScrollPosition = 0;
     const scrollHandler = (event: Event) => {
-      if (window.scrollY < 300 && window.innerWidth > 1024) {
+      if (window.scrollY < fullyHideHeight && window.innerWidth > 1024) {
         navbar.classList.add(navbarHideFully);
         lastScrollPosition = window.scrollY;
       } else if (window.scrollY > lastScrollPosition) {
@@ -42,13 +47,22 @@ const Navbar = () => {
 
   return (
     <Fragment>
-      {/* <div id="navbar" className={"navbar-fixed " + styles.navbarContainer}> */}
-      <nav id="navbar" className={`${styles.navbar} ${styles.navbarHideFully}`}>
+      <nav
+        id="navbar"
+        className={`${styles.navbar} ${
+          initialFullyHide && styles.navbarHideFully
+        }`}
+      >
         <div className="nav-wrapper">
           <a href="#!" data-target="mobile-sidenav" className="sidenav-trigger">
             <i className={"material-icons " + styles.text}>menu</i>
           </a>
           <ul className={"hide-on-med-and-down " + styles.navUl}>
+            <li className={styles.navUlLi}>
+              <a className={styles.text + " " + styles.navUlLiA} href="/">
+                Home
+              </a>
+            </li>
             <li className={styles.navUlLi}>
               <a
                 className={styles.text + " " + styles.navUlLiA}
@@ -74,7 +88,7 @@ const Navbar = () => {
               </a>
             </li>
             <li className={styles.navUlLi}>
-              <a className={styles.text + " " + styles.navUlLiA} href="/#blog">
+              <a className={styles.text + " " + styles.navUlLiA} href="/blog">
                 Blog
               </a>
             </li>
@@ -86,12 +100,22 @@ const Navbar = () => {
                 Contact
               </a>
             </li>
+            <li className={styles.navUlLi}>
+              <a className={styles.text + " " + styles.navUlLiA} href="/#bio">
+                Bio
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
-      {/* </div> */}
+
       {/* This is the side nav for mobile view */}
       <ul className="sidenav teal lighten-5" id="mobile-sidenav">
+        <li>
+          <a className={styles.text} href="/">
+            Home
+          </a>
+        </li>
         <li>
           <a className={styles.text} href="/#projects">
             Projects
@@ -115,6 +139,11 @@ const Navbar = () => {
         <li>
           <a className={styles.text} href="/#contact">
             Contact
+          </a>
+        </li>
+        <li>
+          <a className={styles.text} href="/#bio">
+            Bio
           </a>
         </li>
       </ul>

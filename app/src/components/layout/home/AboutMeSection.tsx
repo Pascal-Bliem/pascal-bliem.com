@@ -55,7 +55,7 @@ const AboutMeSection = () => {
                     className={`fab fa-twitter-square ${styles.contactIcon}`}
                   ></i>
                 </a>
-                <a href="mailto:bliem.pascal@gmail.com">
+                <a href="mailto:pascal@bliem.de">
                   <i className={`fas fa-envelope ${styles.contactIcon}`}></i>
                 </a>
               </div>

@@ -1,8 +1,9 @@
-import marked from "marked";
-import markdownPath from "raw-loader!./markdown/test.md";
+import Post from "./postModel";
 
-fetch(markdownPath)
-  .then((res) => res.text())
-  .then((text) => console.log(marked(text)));
+const posts: Post[] = [
+  require("./postObjects/doggoSnap").default,
+  require("./postObjects/onnx").default,
+  require("./postObjects/dogClassifier").default,
+];
 
-export default [{}];
+export default posts;

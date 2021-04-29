@@ -1,0 +1,57 @@
+@import "../../variables";
+
+@import "../layout/blog/Posts.module.scss";
+
+.page {
+  flex: 1;
+  min-height: 1200px;
+}
+
+.postContainer {
+  max-width: 700px;
+  text-align: left;
+
+  figure {
+    text-align: center;
+    padding: 1em 0;
+
+    img {
+      width: 100%;
+    }
+
+    figcaption {
+      font-style: italic;
+      color: $light-text-color;
+      padding-top: 0.5em;
+    }
+  }
+}
+
+.postTitle {
+  color: $text-color;
+  margin-top: 10rem;
+}
+
+.imageContainer {
+  height: auto;
+  margin-top: 3rem;
+}
+
+.postContentContainer {
+  @extend .imageContainer;
+  color: $light-text-color;
+  text-align: justify;
+  margin-bottom: 15rem;
+
+  a {
+    color: lighten($color: $light-text-color, $amount: 25%);
+  }
+
+  h3 {
+    color: $text-color;
+    font-size: 22px;
+  }
+  strong {
+    color: $text-color;
+  }
+}

@@ -1,0 +1,56 @@
+@import "../../../variables";
+
+.sectionContainer {
+  color: $text-color;
+  text-align: center;
+}
+
+.sectionSeparator {
+  margin-top: 3rem;
+  width: 5%;
+  height: 4px;
+  border: none;
+  background-color: $secondary-color;
+
+  @media (max-width: $default-breakpoint) {
+    width: 10%;
+  }
+}
+
+.paragraph {
+  text-align: justify;
+  color: $light-text-color;
+}
+
+.sectionHeader {
+  margin-bottom: 3rem;
+}
+
+.sectionFooter {
+  color: $light-text-color;
+  padding-top: 2rem;
+}
+
+.contactIcon {
+  color: $secondary-color;
+  font-size: 30px;
+  margin-left: 30%;
+  margin-right: 20px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding: 15px;
+  border: 1px solid $light-text-color;
+  border-radius: 50%;
+
+  @media (max-width: $default-breakpoint) {
+    margin-left: 15%;
+  }
+}
+
+.contactIconLink {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+}

@@ -1,0 +1,16 @@
+@import "../../variables";
+
+.navLinkContainer {
+  text-align: center;
+  margin-top: 3%;
+
+  @media (max-width: $default-breakpoint) {
+    display: none;
+  }
+}
+
+.navLink {
+  font-size: 1.2rem;
+  color: darken($color: $primary-color, $amount: 25%);
+  padding: 0 20px;
+}

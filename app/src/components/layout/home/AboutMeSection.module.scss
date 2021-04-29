@@ -1,4 +1,4 @@
-@import "../../variables";
+@import "../../../variables";
 
 // inherit default section styles
 @import "./SectionStyles";
@@ -66,4 +66,8 @@
   font-size: 30px;
   padding: 0 0.5rem;
   margin-top: 1rem;
+
+  &:hover {
+    color: lighten($color: $secondary-color, $amount: 5%);
+  }
 }

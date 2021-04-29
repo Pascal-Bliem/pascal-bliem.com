@@ -1,5 +1,15 @@
 import React from "react";
 import styles from "./BlogSection.module.scss";
+// import marked from "marked";
+// import posts from "../../../assets/posts/posts";
+
+// marked.setOptions({
+//   gfm: false,
+//   breaks: true,
+// });
+
+// console.log(marked(posts[1].content));
+// {/* <div dangerouslySetInnerHTML={{ __html: marked(posts[1].content) }} /> */}
 
 const BlogSection = () => {
   return (
@@ -11,7 +21,7 @@ const BlogSection = () => {
         </h4>
         <div className={`row`}>This is gonna be the Blog section.</div>
         <p className={styles.sectionFooter}>
-          <a href="#!">
+          <a href="/blog">
             Visit the full Blog here <i className="fas fa-pencil-alt"></i>
           </a>
         </p>

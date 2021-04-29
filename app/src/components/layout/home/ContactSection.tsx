@@ -11,16 +11,7 @@ const ContactIcon = ({ icon, link, text }: ContactIconProps) => {
   return (
     <div className="col s12 m6 l4">
       <a href={link}>
-        <div
-          // TODO: put this stuff in CSS file
-          style={{
-            display: "flex",
-            justifyContent: "flex-start",
-            alignItems: "center",
-            flex: 1,
-            textAlign: "center",
-          }}
-        >
+        <div className={styles.contactIconLink}>
           <i
             className={`${icon} ${styles.contactIcon} hoverable`}
             style={contactIconStyle}

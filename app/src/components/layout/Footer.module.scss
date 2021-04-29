@@ -1,7 +1,7 @@
 @import "../../variables";
 
 // inherit default section styles
-@import "./SectionStyles";
+@import "./home/SectionStyles";
 
 .background {
   @extend .background;
@@ -15,4 +15,15 @@
   color: $primary-color;
   max-width: 950px;
   margin: auto;
+}
+
+.contactIcon {
+  color: $secondary-color;
+  font-size: 30px;
+  padding: 0 0.5rem;
+  margin-top: 1rem;
+
+  &:hover {
+    color: lighten($color: $secondary-color, $amount: 5%);
+  }
 }

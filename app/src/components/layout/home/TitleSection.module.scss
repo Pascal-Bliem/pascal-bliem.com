@@ -1,4 +1,4 @@
-@import "../../variables";
+@import "../../../variables";
 
 $text-color: #eeeeee;
 
@@ -44,21 +44,6 @@ an increasing opacity animation */
   100% {
     opacity: 0.65;
   }
-}
-
-.navLinkContainer {
-  text-align: center;
-  margin-top: 3%;
-
-  @media (max-width: $default-breakpoint) {
-    display: none;
-  }
-}
-
-.navLink {
-  font-size: 1.2rem;
-  color: darken($color: $text-color, $amount: 25%);
-  padding: 0 20px;
 }
 
 .titleContainer {
@@ -215,6 +200,11 @@ strong {
 
   @media (max-width: $large-screen-breakpoint) {
     margin-top: 2rem;
+  }
+  // when the screen height gets too small (and we're not on mobile)
+  // remove the button so that it doesn't flow of the background
+  @media (max-height: 700px) and (min-width: $default-breakpoint) {
+    display: none;
   }
 }
 

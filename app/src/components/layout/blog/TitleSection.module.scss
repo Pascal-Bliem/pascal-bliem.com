@@ -1,0 +1,54 @@
+@import "../../../variables";
+
+@import "../home/TitleSection.module.scss";
+
+.titleSection {
+  @extend .titleSection;
+  background: url("https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 20rem;
+  height: 60vh;
+  @media (max-width: $default-breakpoint) {
+    height: 50vh;
+  }
+}
+
+.titleHeading {
+  @extend .titleHeading;
+  opacity: 0;
+  transform: none;
+  animation: none;
+  hyphens: none;
+  margin-top: 0;
+  animation: appear 1s linear 1s forwards;
+
+  @media (max-width: $default-breakpoint) {
+    margin-top: 5rem;
+  }
+}
+
+.titleSubheading {
+  @extend .titleSubheading;
+  opacity: 0;
+  visibility: visible;
+  animation: none;
+  overflow: auto;
+  border: none;
+  padding: 5px;
+  animation: appear 1s linear 1s forwards;
+
+  @media (max-width: $default-breakpoint) {
+    display: none;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,4 +1,12 @@
-@import "../../variables";
+@import "../../../variables";
+
+.background {
+  width: 100%;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  margin-top: 3rem;
+}
 
 .sectionContainer {
   color: $text-color;
@@ -13,7 +21,7 @@
   background-color: $secondary-color;
 
   @media (max-width: $default-breakpoint) {
-    width: 10%;
+    width: 15%;
   }
 }
 
@@ -29,20 +37,4 @@
 .sectionFooter {
   color: $light-text-color;
   padding-top: 2rem;
-}
-
-.contactIcon {
-  color: $secondary-color;
-  font-size: 30px;
-  margin-left: 30%;
-  margin-right: 20px;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  padding: 15px;
-  border: 1px solid $light-text-color;
-  border-radius: 50%;
-
-  @media (max-width: $default-breakpoint) {
-    margin-left: 15%;
-  }
 }

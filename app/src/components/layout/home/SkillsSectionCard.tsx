@@ -47,7 +47,7 @@ const SkillsSectionCard = ({
       >
         <div className="modal-content">
           <img
-            src={require(`../../assets/images/${iconName}.svg`).default}
+            src={require(`../../../assets/images/${iconName}.svg`).default}
             className={styles.skillIcon}
             alt={iconName}
           />
