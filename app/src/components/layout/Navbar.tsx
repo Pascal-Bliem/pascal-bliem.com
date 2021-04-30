@@ -43,7 +43,7 @@ const Navbar = ({ fullyHideHeight, initialFullyHide }: NavbarProps) => {
       window.removeEventListener("scroll", scrollHandler);
       window.removeEventListener("mouseenter", mouseEnterHandler);
     };
-  });
+  }, []);
 
   return (
     <Fragment>
@@ -132,7 +132,7 @@ const Navbar = ({ fullyHideHeight, initialFullyHide }: NavbarProps) => {
           </a>
         </li>
         <li>
-          <a className={styles.text} href="/#blog">
+          <a className={styles.text} href="/blog">
             Blog
           </a>
         </li>

@@ -5,6 +5,7 @@ import Navbar from "../layout/Navbar";
 import Footer from "../layout/Footer";
 import marked from "marked";
 import posts from "../../assets/posts/posts";
+import createTOC from "../../utils/postTOC";
 
 export interface PostPageProps {
   postName: string;
@@ -17,6 +18,13 @@ const PostPage = () => {
     (post) => post.title.toLowerCase() === postName.toLowerCase()
   );
 
+  useEffect(() => {
+    document.title = post
+      ? post.title + " - Pascal Bliem"
+      : "Blog - Pascal Bliem";
+  }, []);
+
+  // this useEffect is auto-captioning the images from their alt text
   useEffect(() => {
     const images = document.querySelectorAll(".container img");
     let L = images.length;
@@ -35,7 +43,42 @@ const PostPage = () => {
       temp.appendChild(which);
       temp.appendChild(content);
     }
-  });
+  }, []);
+
+  // this useEffect calls a util function which adds the table of contents (TOC)
+  useEffect(() => {
+    const {
+      maxWidthHandler,
+      scrollHideHandler,
+      scrollCurrentHandler,
+    } = createTOC();
+
+    return () => {
+      window.removeEventListener("resize", maxWidthHandler);
+      window.removeEventListener("scroll", scrollHideHandler);
+      window.removeEventListener("scroll", scrollCurrentHandler);
+    };
+  }, []);
+
+  // this useEffect adds the scripts for MathJax
+  useEffect(() => {
+    const mathJaxCdn = document.createElement("script");
+    mathJaxCdn.type = "text/javascript";
+    mathJaxCdn.src =
+      "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    mathJaxCdn.async = false;
+    document.body.appendChild(mathJaxCdn);
+
+    const mathJaxConfig = document.createElement("script");
+    mathJaxConfig.type = "text/x-mathjax-config";
+    mathJaxConfig.text = `MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ],
+        processEscapes: true
+      }
+    });`;
+    document.body.appendChild(mathJaxConfig);
+  }, []);
 
   return (
     <div className={styles.page}>
@@ -50,7 +93,9 @@ const PostPage = () => {
                 <p className={styles.publishDate}>
                   Published: {post.publishDate.toLocaleDateString()} | Tags:{" "}
                   {post.tags.map((tag) => (
-                    <span className={styles.postTag}>{tag}</span>
+                    <span key={tag} className={styles.postTag}>
+                      {tag}
+                    </span>
                   ))}
                 </p>
               </div>

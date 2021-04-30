@@ -13,7 +13,7 @@ import Footer from "../layout/Footer";
 const Home = () => {
   useEffect(() => {
     document.title = "Pascal Bliem";
-  });
+  }, []);
 
   return (
     <div className={styles.page}>

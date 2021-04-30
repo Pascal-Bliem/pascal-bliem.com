@@ -14,6 +14,7 @@
   figure {
     text-align: center;
     padding: 1em 0;
+    margin: 0;
 
     img {
       width: 100%;
@@ -47,11 +48,67 @@
     color: lighten($color: $light-text-color, $amount: 25%);
   }
 
-  h3 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: $text-color;
     font-size: 22px;
   }
   strong {
     color: $text-color;
   }
+}
+
+// the styles below are for the table of contents (TOC)
+.postPageToc {
+  position: fixed;
+  left: 0;
+  top: 10%;
+  width: 50%;
+  max-height: 90%;
+  padding: 0 0.5em;
+  text-align: right;
+  transition: transform 0.7s ease-out;
+  overflow-y: auto;
+  scrollbar-color: $secondary-color $primary-color;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 0.5em;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $primary-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $secondary-color;
+    border-radius: 5px;
+    width: 0.3em;
+
+    &:hover {
+      background: lighten($color: $secondary-color, $amount: 5%);
+    }
+  }
+
+  p {
+    border-top: 2px solid $primary-color;
+  }
+
+  @media (max-width: $default-breakpoint) {
+    display: none;
+  }
+}
+
+.tocHide {
+  transform: translateX(-50vw);
+}
+
+.current {
+  color: saturate($color: $secondary-color, $amount: 70%);
+  font-weight: bold;
+  text-shadow: 0 0 2px 1px rgba(0, 0, 50, 0.2);
 }

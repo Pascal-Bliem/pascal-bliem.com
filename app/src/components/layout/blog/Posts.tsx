@@ -84,7 +84,9 @@ const Posts = () => {
                     <p className={styles.publishDate}>
                       Published: {post.publishDate.toLocaleDateString()} | Tags:{" "}
                       {post.tags.map((tag) => (
-                        <span className={styles.postTag}>{tag}</span>
+                        <span key={tag} className={styles.postTag}>
+                          {tag}
+                        </span>
                       ))}
                     </p>
                   </div>

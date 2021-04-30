@@ -4,6 +4,7 @@ import "materialize-css/dist/css/materialize.min.css";
 //@ts-ignore
 import M from "materialize-css/dist/js/materialize.min.js";
 import "./App.scss";
+import "./highlightjs.scss";
 import Home from "./components/pages/Home";
 import Blog from "./components/pages/Blog";
 import PostPage from "./components/pages/PostPage";

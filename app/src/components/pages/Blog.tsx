@@ -8,7 +8,7 @@ import Footer from "../layout/Footer";
 const Blog = () => {
   useEffect(() => {
     document.title = "Blog - Pascal Bliem";
-  });
+  }, []);
 
   return (
     <div className={styles.page}>
