@@ -8,6 +8,7 @@ import "./highlightjs.scss";
 import Home from "./components/pages/Home";
 import Blog from "./components/pages/Blog";
 import PostPage from "./components/pages/PostPage";
+import ToxBlock from "./components/pages/projects/ToxBlock";
 
 function App() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function App() {
         <Switch>
           <Route exact path="/blog" component={Blog} />
           <Route exact path="/blog/:postName" component={PostPage} />
+          <Route exact path="/tox-block" component={ToxBlock} />
           <Route exact path="/" component={Home} />
         </Switch>
       </div>

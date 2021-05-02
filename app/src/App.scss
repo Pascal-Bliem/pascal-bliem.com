@@ -1,14 +1,8 @@
-// import Google font by name
-@mixin google-font($font) {
-  $font: unquote($font);
-  @import url(https://fonts.googleapis.com/css?family=#{$font});
-}
+// import variables
+@import "variables";
 
 // import fonts
 @include google-font("Nunito+Sans");
-
-// import variables
-@import "variables";
 
 // general CSS that should apply in all places
 * {

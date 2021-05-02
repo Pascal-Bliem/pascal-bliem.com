@@ -1,3 +1,9 @@
+// import Google font by name
+@mixin google-font($font) {
+  $font: unquote($font);
+  @import url(https://fonts.googleapis.com/css?family=#{$font});
+}
+
 // sizes
 $font-size: 16px;
 $default-breakpoint: 1028px;

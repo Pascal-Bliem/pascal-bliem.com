@@ -1,0 +1,178 @@
+@import "../../../variables";
+
+@import "../PostPage.module.scss";
+
+// import fonts
+@include google-font("Bangers");
+@include google-font("Creepster");
+
+.toxblockTitle {
+  padding-top: 100px;
+  font-size: 6em;
+
+  @media (max-width: $default-breakpoint) {
+    font-size: 5em;
+  }
+}
+
+.toxSpan {
+  font-family: "Creepster", cursive;
+  background: linear-gradient(#071a52 0%, #a7ff83 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blockSpan {
+  font-family: "Bangers", cursive;
+  background: linear-gradient(#071a52 0%, #a7ff83 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.resourceList {
+  list-style-type: circle;
+}
+
+.toxblockImg {
+  width: 100%;
+}
+
+.toxblockPostButtonDiv {
+  text-align: center;
+
+  @media (max-width: $default-breakpoint) {
+    padding-top: 0.5em;
+  }
+}
+
+.toxblockPostButton {
+  background-color: $secondary-color;
+  @media (max-width: $default-breakpoint) {
+    width: 80%;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    text-align: center;
+  }
+}
+
+.toxblockAppStatus {
+  color: #3498db;
+  font-weight: bold;
+}
+
+.toxblockFormControl {
+  position: relative;
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+  small {
+    color: #e74c3c;
+    position: absolute;
+    bottom: -20px;
+    /* needs to be made bigger with media query for smaller screen*/
+    left: 0;
+    visibility: hidden;
+
+    @media (max-width: $default-breakpoint) {
+      bottom: -45px;
+    }
+  }
+}
+
+.error {
+  small {
+    visibility: visible;
+  }
+
+  .toxblockInput {
+    border-color: #e74c3c;
+  }
+}
+
+.toxblockInput {
+  border: 2px solid #f0f0f0;
+  width: 100%;
+  height: 5em;
+  border-radius: 5px;
+  display: block;
+  background-color: #f5fafa;
+}
+
+.toxblockInput:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.toxblockChart {
+  margin: 3em 0.5em 1em;
+}
+
+.toxblockBarLabel {
+  width: 6em;
+  text-align: right;
+  margin-top: 0;
+
+  @media (max-width: $default-breakpoint) {
+    padding-top: 0.5em;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.toxblockBarNumber {
+  display: inline;
+  vertical-align: top;
+
+  @media (max-width: $default-breakpoint) {
+    display: block;
+    padding: 0.27em;
+  }
+}
+
+.toxblockBar {
+  background: blue;
+  height: 1.4em;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin: 0 1em;
+  width: 1%;
+  /* from 1% to   81%   */
+  display: inline-block;
+  transition: width 400ms, opacity 200ms, box-shadow 200ms;
+
+  @media (max-width: $default-breakpoint) {
+    display: block;
+    padding-left: 0.25em;
+    height: 1.25em;
+  }
+}
+
+.toxblockBar:hover {
+  opacity: 0.7;
+  box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+#toxicBar {
+  background: #071a52;
+}
+
+#severeToxicBar {
+  background: #0a2a8a;
+}
+
+#obsceneBar {
+  background: #086972;
+}
+
+#insultBar {
+  background: #4a8665;
+}
+
+#threatBar {
+  background: #17b978;
+}
+
+#identityHateBar {
+  background: #a7ff83;
+}
