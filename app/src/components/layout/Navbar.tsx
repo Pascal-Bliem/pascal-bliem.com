@@ -43,7 +43,7 @@ const Navbar = ({ fullyHideHeight, initialFullyHide }: NavbarProps) => {
       window.removeEventListener("scroll", scrollHandler);
       window.removeEventListener("mouseenter", mouseEnterHandler);
     };
-  }, []);
+  }, [fullyHideHeight]);
 
   return (
     <Fragment>

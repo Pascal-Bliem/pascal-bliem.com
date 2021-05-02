@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import Navbar from "../layout/Navbar";
 import Footer from "../layout/Footer";
 import marked from "marked";
+import _ from "lodash";
 import posts from "../../assets/posts/posts";
 import createTOC from "../../utils/postTOC";
 
@@ -15,14 +16,14 @@ const PostPage = () => {
   const { postName }: PostPageProps = useParams();
 
   const post = posts.find(
-    (post) => post.title.toLowerCase() === postName.toLowerCase()
+    (post) => _.lowerCase(post.title) === _.lowerCase(postName)
   );
 
   useEffect(() => {
     document.title = post
       ? post.title + " - Pascal Bliem"
       : "Blog - Pascal Bliem";
-  }, []);
+  }, [post]);
 
   // this useEffect is auto-captioning the images from their alt text
   useEffect(() => {
@@ -47,18 +48,20 @@ const PostPage = () => {
 
   // this useEffect calls a util function which adds the table of contents (TOC)
   useEffect(() => {
-    const {
-      maxWidthHandler,
-      scrollHideHandler,
-      scrollCurrentHandler,
-    } = createTOC();
+    if (post) {
+      const {
+        maxWidthHandler,
+        scrollHideHandler,
+        scrollCurrentHandler,
+      } = createTOC();
 
-    return () => {
-      window.removeEventListener("resize", maxWidthHandler);
-      window.removeEventListener("scroll", scrollHideHandler);
-      window.removeEventListener("scroll", scrollCurrentHandler);
-    };
-  }, []);
+      return () => {
+        window.removeEventListener("resize", maxWidthHandler);
+        window.removeEventListener("scroll", scrollHideHandler);
+        window.removeEventListener("scroll", scrollCurrentHandler);
+      };
+    }
+  }, [post]);
 
   // this useEffect adds the scripts for MathJax
   useEffect(() => {

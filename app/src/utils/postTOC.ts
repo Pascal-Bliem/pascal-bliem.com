@@ -1,6 +1,6 @@
 import styles from "../components/pages/PostPage.module.scss";
 
-export default () => {
+const initPostTOC = () => {
   const htmlBody = document.querySelector("body") as HTMLBodyElement;
   const postBody = document.querySelector(
     `.${styles.postContentContainer}`
@@ -92,3 +92,5 @@ export default () => {
 
   return { maxWidthHandler, scrollHideHandler, scrollCurrentHandler };
 };
+
+export default initPostTOC;

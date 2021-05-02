@@ -4,5 +4,8 @@
         "highlightjs",
         "hljs",
         "mathjax"
+    ],
+    "cSpell.words": [
+        "diarysta"
     ]
 }

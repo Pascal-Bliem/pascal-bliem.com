@@ -29,7 +29,7 @@ const ChartBar = ({ barLabel, barId, barNumberId }: ChartBarProps) => {
 const ToxBlock = () => {
   useEffect(() => {
     initToxblockForm();
-  }, [initToxblockForm]);
+  }, []);
 
   return (
     <div className={styles.page}>
@@ -71,27 +71,27 @@ const ToxBlock = () => {
             <ul>
               <li>
                 <a href="https://github.com/Pascal-Bliem/tox-block">
-                  The ToxBlock Github repository
+                  {">"} The ToxBlock Github repository
                 </a>
               </li>
               <li>
                 <a href="https://github.com/Pascal-Bliem/tox-block-api">
-                  The ToxBlock API Github repository
+                  {">"} The ToxBlock API Github repository
                 </a>
               </li>
               <li>
                 <a href="https://pypi.org/project/tox-block/">
-                  ToxBlock on the Python package index (PyPI)
+                  {">"} ToxBlock on the Python package index (PyPI)
                 </a>
               </li>
               <li>
-                <a href="http://www.pascal-bliem.com/blog/tox%20block%20using%20ai%20to%20keep%20discussions%20clean">
-                  A blog post on the ToxBlock package
+                <a href="/blog/tox%20block%20using%20ai%20to%20keep%20discussions%20clean">
+                  {">"} A blog post on the ToxBlock package
                 </a>
               </li>
               <li>
-                <a href="http://www.pascal-bliem.com/blog/the%20tox%20block%20api%20bring%20ml%20models%20into%20action%20by%20serving%20them%20on%20the%20web">
-                  A blog post on the ToxBlock API
+                <a href="/blog/the%20tox%20block%20api%20bring%20ml%20models%20into%20action%20by%20serving%20them%20on%20the%20web">
+                  {">"} A blog post on the ToxBlock API
                 </a>
               </li>
             </ul>
@@ -127,7 +127,8 @@ const ToxBlock = () => {
               . The neural network predicts the probabilities of a given input
               text belonging to any of the six categories of verbal toxicity,
               and finally, the prediction is returned in JSON format via the
-              HTTP response.<a id="try"></a>
+              HTTP response.
+              <div id="try" />
             </p>
 
             <h3>Try it out</h3>

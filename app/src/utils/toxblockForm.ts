@@ -1,8 +1,7 @@
 import styles from "../components/pages/projects/ToxBlock.module.scss";
 
 //  This file is form validation and API calls for the ToxBlock page
-
-export default () => {
+const initToxBlockForm = () => {
   // callback function receiving the health status form the ToxBlock REST API
   // (which was called via the server to avoid CORS trouble) and updates the
   // status display on the website accordingly
@@ -169,3 +168,5 @@ export default () => {
     }
   });
 };
+
+export default initToxBlockForm;

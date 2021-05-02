@@ -74,7 +74,7 @@ const Posts = () => {
               className={`row ${styles.postContainer}`}
             >
               <a
-                href={`blog/${post.title.toLowerCase()}`}
+                href={`blog/${_.lowerCase(post.title)}`}
                 style={{ display: "block" }}
               >
                 <div className={`row ${styles.titleRow}`}>

@@ -9,6 +9,8 @@ import Home from "./components/pages/Home";
 import Blog from "./components/pages/Blog";
 import PostPage from "./components/pages/PostPage";
 import ToxBlock from "./components/pages/projects/ToxBlock";
+import Diarysta from "./components/pages/projects/Diarysta";
+import SuaraJermanesia from "./components/pages/projects/SuaraJermanesia";
 
 function App() {
   useEffect(() => {
@@ -24,6 +26,8 @@ function App() {
           <Route exact path="/blog" component={Blog} />
           <Route exact path="/blog/:postName" component={PostPage} />
           <Route exact path="/tox-block" component={ToxBlock} />
+          <Route exact path="/diarysta" component={Diarysta} />
+          <Route exact path="/suara-jermanesia" component={SuaraJermanesia} />
           <Route exact path="/" component={Home} />
         </Switch>
       </div>

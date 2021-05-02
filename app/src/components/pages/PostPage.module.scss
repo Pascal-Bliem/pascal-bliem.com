@@ -68,7 +68,7 @@
   left: 0;
   top: 10%;
   width: 50%;
-  max-height: 90%;
+  max-height: 75%;
   padding: 0 0.5em;
   text-align: right;
   transition: transform 0.7s ease-out;
@@ -96,6 +96,10 @@
 
   p {
     border-top: 2px solid $primary-color;
+  }
+
+  @media (max-width: $large-screen-breakpoint) {
+    max-height: 65%;
   }
 
   @media (max-width: $default-breakpoint) {

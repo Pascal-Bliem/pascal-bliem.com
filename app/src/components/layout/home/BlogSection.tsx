@@ -8,11 +8,35 @@ const BlogSection = () => {
   useEffect(() => {
     document.addEventListener("DOMContentLoaded", function () {
       const elements = document.querySelectorAll(".carousel");
-      const instances = M.Carousel.init(elements, {
+      M.Carousel.init(elements, {
         numVisible: 7,
         indicators: true,
       });
     });
+
+    var carousel = document.getElementById("carousel") as HTMLElement;
+
+    function moveNextCarousel() {
+      var el = document.getElementById("carousel");
+      var moveRight = M.Carousel.getInstance(el);
+      moveRight.next(1);
+    }
+
+    const duration = 2500;
+    let interval = setInterval(moveNextCarousel, duration);
+
+    carousel.addEventListener("mouseenter", () => clearInterval(interval));
+    carousel.addEventListener("mouseleave", () => {
+      interval = setInterval(moveNextCarousel, duration);
+    });
+
+    return () => {
+      clearInterval(interval);
+      carousel.removeEventListener("mouseenter", () => clearInterval(interval));
+      carousel.removeEventListener("mouseleave", () => {
+        interval = setInterval(moveNextCarousel, duration);
+      });
+    };
   }, []);
 
   return (
@@ -23,7 +47,7 @@ const BlogSection = () => {
           My <strong>Blog</strong>
         </h4>
         <div className={`row`}>
-          <div className={`carousel ${styles.carouselContainer}`}>
+          <div id="carousel" className={`carousel ${styles.carouselContainer}`}>
             {posts.map((post) => {
               return (
                 <a

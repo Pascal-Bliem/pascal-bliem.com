@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styles from "./Footer.module.scss";
 
 // TODO: Add contact icons in footer
