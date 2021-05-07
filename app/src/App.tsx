@@ -11,6 +11,7 @@ import PostPage from "./components/pages/PostPage";
 import ToxBlock from "./components/pages/projects/ToxBlock";
 import Diarysta from "./components/pages/projects/Diarysta";
 import SuaraJermanesia from "./components/pages/projects/SuaraJermanesia";
+import DoggoSnap from "./components/pages/projects/DoggoSnap";
 
 function App() {
   useEffect(() => {
@@ -28,6 +29,7 @@ function App() {
           <Route exact path="/tox-block" component={ToxBlock} />
           <Route exact path="/diarysta" component={Diarysta} />
           <Route exact path="/suara-jermanesia" component={SuaraJermanesia} />
+          <Route exact path="/doggo-snap" component={DoggoSnap} />
           <Route exact path="/" component={Home} />
         </Switch>
       </div>

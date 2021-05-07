@@ -12,7 +12,7 @@ const ProjectSection = () => {
       <div className={`row`}>
         {/* Unsplash Brad Jordan https://unsplash.com/photos/U32jeOdkgfA */}
         <ProjectSectionCard
-          linkUrl="/blog/the%20doggo%20snap%20mobile%20app"
+          linkUrl="/doggo-snap"
           imageUrl="https://images.unsplash.com/photo-1559715541-d4fc97b8d6dd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80"
           title="Doggo Snap"
           description="Doggo Snap is a mobile app that lets you classify over 120 dog breeds from photos by employing neural networks for image recognition."

@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Diarysta.module.scss";
 import Navbar from "../../layout/Navbar";
 import Footer from "../../layout/Footer";
 
 const SuaraJermanesia = () => {
+  useEffect(() => {
+    document.title = "Suara Jermanesia Podcast - Pascal Bliem";
+  }, []);
+
   return (
     <div className={styles.page}>
       <Navbar fullyHideHeight={0} initialFullyHide={false} />

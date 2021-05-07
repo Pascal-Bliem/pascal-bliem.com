@@ -21,7 +21,7 @@
 
 .carouselContainer {
   transform: translateX(-4.5rem);
-  height: 430px;
+  height: 460px;
 
   @media (max-width: $large-screen-breakpoint) {
     transform: translateX(-5rem);
@@ -93,6 +93,10 @@
 
 .cardTitle {
   font-size: 1.5rem;
+
+  @media (max-width: $default-breakpoint) {
+    font-size: 1.2rem;
+  }
 }
 
 .cardText {

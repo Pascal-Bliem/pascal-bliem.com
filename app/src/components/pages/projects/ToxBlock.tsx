@@ -31,6 +31,10 @@ const ToxBlock = () => {
     initToxblockForm();
   }, []);
 
+  useEffect(() => {
+    document.title = "ToxBlock - Pascal Bliem";
+  }, []);
+
   return (
     <div className={styles.page}>
       <Navbar fullyHideHeight={0} initialFullyHide={false} />

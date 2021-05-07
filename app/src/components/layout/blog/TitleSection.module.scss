@@ -10,8 +10,13 @@
   background-size: cover;
   min-height: 20rem;
   height: 60vh;
+
+  @media (max-width: $large-screen-breakpoint) {
+    height: 80vh;
+  }
+
   @media (max-width: $default-breakpoint) {
-    height: 50vh;
+    height: 90vh;
   }
 }
 
@@ -25,7 +30,7 @@
   animation: appear 1s linear 1s forwards;
 
   @media (max-width: $default-breakpoint) {
-    margin-top: 5rem;
+    margin-top: 30vh;
   }
 }
 
