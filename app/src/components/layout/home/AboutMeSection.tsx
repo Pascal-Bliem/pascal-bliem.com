@@ -21,21 +21,20 @@ const AboutMeSection = () => {
               About <strong>Me</strong>
             </h4>
             <p className={styles.paragraph}>
-              I am a Data Scientist at HDI, one of Germany's leading insurance
-              companies, where I work on customer value models, churn
-              prevention, recommendation engines, marketing support, and data
-              infrastructure improvements. I have a strong interest in providing
-              data-driven and action-oriented solutions to high-impact business
-              problems. Besides work I enjoy building cool tech things, doing
-              web and mobile development, hosting a podcast, learning new
-              languages (both natural and programming ones) and making music.
+              I'm a Machine Learning Engineer / Data Scientist at Peregrine
+              Technologies, a startup providing AI-powered traffic video
+              analytics to make traffic safe and ecological, where I work with
+              deep learning for computer vision, sensor data processing, and
+              full-stack software development. Besides work I enjoy building
+              cool tech things, doing web and mobile development, hosting a
+              podcast, learning new languages and making music.
             </p>
 
             <div className={styles.iconContainer}>
               <div className="col s12 m6">
                 <button className={styles.cvButton}>
                   <a
-                    href="https://pb-data-blogposts.s3.eu-central-1.amazonaws.com/website/CV_202101_Pascal+Bliem.pdf"
+                    href="https://pb-data-blogposts.s3.eu-central-1.amazonaws.com/website/CV_Pascal_Bliem.pdf"
                     target="_blank"
                     rel="noreferrer"
                   >

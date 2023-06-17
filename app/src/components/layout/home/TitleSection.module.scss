@@ -7,7 +7,7 @@ $text-color: #eeeeee;
   position: relative;
   background-color: #0a3d5c;
   /* image by Markus Spiske on Unsplash  https://unsplash.com/photos/Fa0pTKuoDVY*/
-  background: url("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background: url("../../../assets/images/code.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -176,6 +176,7 @@ strong {
 
 .moreButton {
   border: none;
+  cursor: pointer;
   font-size: 20px;
   background-color: #00adb5;
   border-radius: 50%;

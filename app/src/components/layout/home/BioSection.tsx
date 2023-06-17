@@ -12,19 +12,33 @@ const BioSection = () => {
         <div className={`row`}>
           <div className="col s12 m12 l6">
             <p className={styles.paragraph}>
-              I'm currently employed as a Data Scientist at HDI, one of
-              Germany's leading insurance companies, where I work on customer
-              value models, churn prevention, recommendation engines, marketing
-              support, and data infrastructure improvements. Besides my main job
-              I also do full-stack web & mobile development and co-host a
-              podcast.
+              I'm currently employed as a Machine Learning Engineer / Data
+              Scientist at{" "}
+              <a className="highlight-link" href="https://www.peregrine.ai/">
+                Peregrine Technologies
+              </a>
+              , a startup providing AI-powered traffic video analytics to make
+              traffic safe and ecological. There, I work on computer vision
+              tasks with deep machine learning, digital sensor data processing,
+              and generally, full-stack software development. Besides my main
+              job I also do web & mobile development and co-host a podcast.
             </p>
             <p className={styles.paragraph}>
-              Between my graduation and starting my current job, I spent over a
-              year backpacking through 10 southeast Asian countries, staying
-              significant portions of the time in Vietnam and Indonesia, where I
-              volunteered as a teacher. During my travels, I got the chance to
-              work on several{" "}
+              Previously, I was a Data Scientist at{" "}
+              <a className="highlight-link" href="https://www.hdi.de/">
+                HDI
+              </a>
+              , one of Germany's leading insurance companies, where I worked on
+              several customer-centric use cases such as customer value models,
+              churn prevention, recommendation engines, marketing support, and
+              data infrastructure improvements.
+            </p>
+            <p className={styles.paragraph}>
+              Between my graduation and starting my first job outside academia,
+              I spent over a year backpacking through 10 southeast Asian
+              countries, staying significant portions of the time in Vietnam and
+              Indonesia, where I volunteered as a teacher. During my travels, I
+              got the chance to work on several{" "}
               <a
                 className="highlight-link"
                 href="https://github.com/Pascal-Bliem?tab=repositories"
@@ -84,7 +98,13 @@ const BioSection = () => {
           <div className={`col s12 m12 l6 ${styles.bioListContainer}`}>
             <ul className={styles.bioList}>
               <li>
-                <span className={styles.bioYear}>Since 2020:</span>
+                <span className={styles.bioYear}>Since 2021:</span>
+                <br />
+                Machine Learning Engineer at Peregrine Technologies
+              </li>
+              <li>
+                <br />
+                <span className={styles.bioYear}>2020 - 2021:</span>
                 <br />
                 Data Scientist at HDI Group
               </li>

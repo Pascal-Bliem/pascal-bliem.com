@@ -106,7 +106,7 @@ const ToxBlock = () => {
               sum it up shortly, the workflow is as follows: The input data is
               send in JSON format via a HTTP POST request to the API app, which
               is hosted on a cloud instance at{" "}
-              <a href="https://www.heroku.com/">Heroku</a>. The app is deployed
+              <a href="https://www.render.com/">Render</a>. The app is deployed
               as a <a href="https://www.docker.com/">Docker</a> container, which
               contains a webserver running the{" "}
               <a href="https://flask.palletsprojects.com/en/1.1.x/">Flask</a>{" "}

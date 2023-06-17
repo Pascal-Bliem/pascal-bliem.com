@@ -19,7 +19,7 @@ const initToxBlockForm = () => {
   };
 
   // check if the ToxBlock API is online and healthy
-  fetch("https://tox-block-api.herokuapp.com/health")
+  fetch("https://tox-block-api.onrender.com/health")
     .then((response) => response.text())
     .then((text) => checkHealthStatus(text));
 
@@ -155,7 +155,7 @@ const initToxBlockForm = () => {
     // if input correct, POST to ToxBlock API
     if (empty && letters) {
       removeError(input);
-      fetch("https://tox-block-api.herokuapp.com/v1/make_single_prediction", {
+      fetch("https://tox-block-api.onrender.com/v1/make_single_prediction", {
         method: "POST",
         headers: {
           Accept: "application/json",

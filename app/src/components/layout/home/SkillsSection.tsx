@@ -100,7 +100,7 @@ const SkillsSection = () => {
                 services.
               </p>
               <p className={styles.modalParagraph}>
-                I use cloud platforms such as AWS or Heroku to scalably host web
+                I use cloud platforms such as AWS or Render to scalably host web
                 servers (e.g. this website here) and data bases, store resources
                 for my blog in S3 object store, train neural networks on GPU
                 processors in AWS Sagemaker or Google Colab, or serve machine

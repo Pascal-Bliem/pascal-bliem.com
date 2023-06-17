@@ -155,21 +155,21 @@ $ docker build -t tox_block_api:latest
 $ docker run --named tox_block_api -d -p 5000:5000 -rm tox_block_api:latest
 \`\`\`
 
-Most cloud providers have their own container image registries to which one can push Docker images. I deployed this project on [Heroku](https://www.heroku.com/). With Heroku, it's very easy to [deploy Docker containers](https://devcenter.heroku.com/categories/deploying-with-docker) by pushing the image to their registry and then releasing it as a web app.
+Most cloud providers have their own container image registries to which one can push Docker images. I deployed this project on [Render](https://www.render.com/). With Render, it's very easy to deploy Docker containers by pushing the image to their registry and then releasing it as a web app.
 
 ### Trying out the ToxBlock API
 <a id="usage"></a>
 
-Okay, demo time. Feel free to follow along and test the ToxBlock API yourself, but please keep in mind: the app is running on one of Heroku's free instances, which is for development purpose only. It won't be able to handle a lot of traffic and if I notice that it is being used heavily, I'll be forced to take it down or introduce authentication. If you want to integrate it into one of your apps, you can easily set it up yourself. It is fully open-source and you can find the usage instructions in the \`README.md\` of its [repo](https://github.com/Pascal-Bliem/tox-block-api). Now, first of all we'll need something that can send HTTP requests. For API testing, I usually use [Postman](https://www.postman.com/), but if you don't want to install anything locally or sign up anywhere, you can use web-based API testing services, e.g. [reqbin.com](https://reqbin.com/). 
+Okay, demo time. Feel free to follow along and test the ToxBlock API yourself, but please keep in mind: the app is running on one of Render's free instances, which is for development purpose only. It won't be able to handle a lot of traffic and if I notice that it is being used heavily, I'll be forced to take it down or introduce authentication. If you want to integrate it into one of your apps, you can easily set it up yourself. It is fully open-source and you can find the usage instructions in the \`README.md\` of its [repo](https://github.com/Pascal-Bliem/tox-block-api). Now, first of all we'll need something that can send HTTP requests. For API testing, I usually use [Postman](https://www.postman.com/), but if you don't want to install anything locally or sign up anywhere, you can use web-based API testing services, e.g. [reqbin.com](https://reqbin.com/). 
 
-Let's check if the web service is up and running by sending a GET request to [\`tox-block-api.herokuapp.com/health\`](https://tox-block-api.herokuapp.com/health). You should get get back response saying 200 ok. Heroku's free instances go into a sleep mode if they're idle, so it may take a few seconds to wake it up after sending the request. You can also check the version of the deep learning model and the API with a GET request to [\`tox-block-api.herokuapp.com/version\`](https://tox-block-api.herokuapp.com/version). At the time of writing this post, this should return a JSON like this:
+Let's check if the web service is up and running by sending a GET request to [\`tox-block-api.onrender.com/health\`](https://tox-block-api.onrender.com/health). You should get get back response saying 200 ok. Render's free instances go into a sleep mode if they're idle, so it may take a few seconds to wake it up after sending the request. You can also check the version of the deep learning model and the API with a GET request to [\`tox-block-api.onrender.com/version\`](https://tox-block-api.onrender.com/version). At the time of writing this post, this should return a JSON like this:
 \`\`\`python
 {
 "api_version": "0.1.0",
 "model_version": "0.1.2"
 }
 \`\`\`
-Okay, if that has worked, we can now try to classify some potentially toxic text. Predictions for single strings of text can me made via sending a POST request to the endpoint [\`tox-block-api.herokuapp.com/v1/make_single_prediction\`]. The request's body should contain JSON data with the key \`input_data\` and string as value:
+Okay, if that has worked, we can now try to classify some potentially toxic text. Predictions for single strings of text can me made via sending a POST request to the endpoint [\`tox-block-api.onrender.com/v1/make_single_prediction\`]. The request's body should contain JSON data with the key \`input_data\` and string as value:
 \`\`\`python
 {
     "input_data": "I will kill you, you f***king idiot!"
@@ -191,7 +191,7 @@ You should get back status 200 and a JSON looking like
     }
 }
 \`\`\`
-Similarly, predictions for multiple strings of text can me made via sending a POST request to the endpoint [\`tox-block-api.herokuapp.com/v1/make_predictions\`]. The request's body should contain JSON data with the key \`input_data\` and a list of strings as value:
+Similarly, predictions for multiple strings of text can me made via sending a POST request to the endpoint [\`tox-block-api.onrender.com/v1/make_predictions\`]. The request's body should contain JSON data with the key \`input_data\` and a list of strings as value:
 \`\`\`python
 {
     "input_data": ["Good morning my friend, I hope you're having a fantastic day!",

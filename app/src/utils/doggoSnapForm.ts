@@ -45,7 +45,7 @@ const initDoggoSnapForm = () => {
   };
 
   // check if the Doggo Snap API is online and healthy
-  fetch("https://doggo-snap-api.herokuapp.com/health")
+  fetch("https://doggo-snap-api.onrender.com/health")
     .then((response) => response.text())
     .then((text) => checkHealthStatus(text));
 
@@ -82,7 +82,7 @@ const initDoggoSnapForm = () => {
       formData.append("topN", "3");
 
       // send post request with the image attached
-      fetch("https://doggo-snap-api.herokuapp.com/v1/classify_dog_breed", {
+      fetch("https://doggo-snap-api.onrender.com/v1/classify_dog_breed", {
         method: "POST",
         body: formData,
       })

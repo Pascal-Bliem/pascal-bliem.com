@@ -33,7 +33,7 @@ const Diarysta = () => {
               with your mood. You can select one of three languages in the menu:
               English, German, and Indonesian. Feel free to check out a demo{" "}
               <strong>
-                <a href="https://diarysta.herokuapp.com/">here</a>
+                <a href="https://diarysta.onrender.com/">here</a>
               </strong>
               . Note that the hosting instance hibernates after long inactivity,
               and it may take a few seconds for it to wake up and make the app
@@ -91,7 +91,7 @@ const Diarysta = () => {
                 </a>
               </li>
               <li>
-                <a href="https://diarysta.herokuapp.com/">
+                <a href="https://diarysta.onrender.com/">
                   {">"} A demo of Diarysta
                 </a>
               </li>

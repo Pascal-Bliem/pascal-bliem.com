@@ -22,6 +22,7 @@
 
 .bioList {
   margin-left: 10%;
+  color: $light-text-color;
 
   @media (max-width: $default-breakpoint) {
     margin-left: 0;
@@ -29,6 +30,7 @@
 }
 
 .bioYear {
+  color: $text-color;
   padding-top: 1rem;
   font-weight: 600;
 }

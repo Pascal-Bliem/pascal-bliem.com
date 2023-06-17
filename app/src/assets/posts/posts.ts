@@ -1,6 +1,11 @@
 import Post from "./postModel";
 
 const posts: Post[] = [
+  require("./postObjects/activityRecognition").default,
+  require("./postObjects/maskRCNN").default,
+  require("./postObjects/yolo").default,
+  require("./postObjects/objectDetectionMetrics").default,
+  require("./postObjects/feedback").default,
   require("./postObjects/doggoSnap").default,
   require("./postObjects/onnx").default,
   require("./postObjects/dogClassifier").default,
