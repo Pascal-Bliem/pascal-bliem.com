@@ -21,13 +21,14 @@ const AboutMeSection = () => {
               About <strong>Me</strong>
             </h4>
             <p className={styles.paragraph}>
-              I'm a Machine Learning Engineer / Data Scientist at Peregrine
-              Technologies, a startup providing AI-powered traffic video
-              analytics to make traffic safe and ecological, where I work with
-              deep learning for computer vision, sensor data processing, and
-              full-stack software development. Besides work I enjoy building
-              cool tech things, doing web and mobile development, hosting a
-              podcast, learning new languages and making music.
+              I'm a Data Scientist, ML & full-stack engineer. I've worked with
+              AI-powered traffic video analytics, deep learning for computer
+              vision, sensor data processing, predictive modelling, web
+              front-ends, APIs, and large-scale data processing pipelines set up
+              in the cloud. I'm focused on building end-to-end data products and
+              have done so in both startup and enterprise. Besides work I enjoy
+              building cool tech things, learning new languages, exercising
+              outdoors, and making music.
             </p>
 
             <div className={styles.iconContainer}>
@@ -54,7 +55,7 @@ const AboutMeSection = () => {
                     className={`fab fa-twitter-square ${styles.contactIcon}`}
                   ></i>
                 </a>
-                <a href="mailto:pascal@bliem.de">
+                <a href="mailto:pascal@pascal-bliem.com">
                   <i className={`fas fa-envelope ${styles.contactIcon}`}></i>
                 </a>
               </div>

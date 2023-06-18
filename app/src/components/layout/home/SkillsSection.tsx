@@ -72,7 +72,8 @@ const SkillsSection = () => {
                 etc. on data to predict if customers are likely to cancel their
                 contract or to buy a new product, to estimate future usage of a
                 service, to recognize handwriting, to classify sentiment in
-                text, and much more.
+                text, understand traffic scenes and localize road assets, and
+                much more.
               </p>
             </Fragment>
           }
@@ -103,8 +104,10 @@ const SkillsSection = () => {
                 I use cloud platforms such as AWS or Render to scalably host web
                 servers (e.g. this website here) and data bases, store resources
                 for my blog in S3 object store, train neural networks on GPU
-                processors in AWS Sagemaker or Google Colab, or serve machine
-                learning models via REST APIs.
+                processors in AWS or Google Colab, serve machine learning models
+                via REST APIs, and build complex and scalable data processing
+                pipelines using various AWS services or orchestrating different
+                pipeline components on kubernetes clusters.
               </p>
             </Fragment>
           }
@@ -197,7 +200,7 @@ const SkillsSection = () => {
           imageUrl="https://images.unsplash.com/photo-1571498664957-fde285d79857?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=564&q=80"
           title="Language & Cultural Exchange"
           iconName="language"
-          description="I love to learn about culture and languages. Currently, I'm co-hosting a cultural exchange podcast in Indonesian and also trying to improve my Chinese."
+          description="I love to learn about culture and languages. I co-hosted a cultural exchange podcast in Indonesian and also trying to improve my Spanish and Chinese."
           longDescription={
             <Fragment>
               <p className={styles.modalParagraph}>
@@ -213,7 +216,7 @@ const SkillsSection = () => {
                 which added so much more quality to my stay there as I was able
                 to deeply connect with my neighbors and learn about their lives.
                 It also helped me with my Malaysian, every time I had to go
-                there for a visa run. At the moment, I am co-hosting the{" "}
+                there for a visa run. I used to co-host the{" "}
                 <a href="http://www.pascal-bliem.com/suarajermanesia">
                   Suara Jermanesia Podcast
                 </a>{" "}
@@ -221,7 +224,9 @@ const SkillsSection = () => {
                 Indonesian living in Germany and vice versa. Living in Taiwan
                 during a research internship also sparked my interest in the
                 Chinese language, which I find very difficult though; hence, I'm
-                still far from fluent.
+                still far from having elaborate conversations. Since I recently
+                also visited Spain a couple of times, I've picked up Spanish as
+                well and have become quite fluent.
               </p>
               <p className={styles.modalParagraph}>
                 I've visited almost 30 countries and I'm always able to gain

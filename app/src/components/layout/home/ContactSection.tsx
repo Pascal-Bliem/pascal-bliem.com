@@ -54,8 +54,8 @@ const ContactSection = () => {
         />
         <ContactIcon
           icon="fas fa-envelope"
-          link="mailto:pascal@bliem.de"
-          text="pascal@bliem.de"
+          link="mailto:pascal@pascal-bliem.com"
+          text="pascal@pascal-bliem.com"
         />
         <ContactIcon
           icon="fab fa-whatsapp"

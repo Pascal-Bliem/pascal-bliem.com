@@ -13,15 +13,16 @@ const BioSection = () => {
           <div className="col s12 m12 l6">
             <p className={styles.paragraph}>
               I'm currently employed as a Machine Learning Engineer / Data
-              Scientist at{" "}
+              Scientist and Full-Stack Engineer at{" "}
               <a className="highlight-link" href="https://www.peregrine.ai/">
                 Peregrine Technologies
               </a>
               , a startup providing AI-powered traffic video analytics to make
               traffic safe and ecological. There, I work on computer vision
               tasks with deep machine learning, digital sensor data processing,
-              and generally, full-stack software development. Besides my main
-              job I also do web & mobile development and co-host a podcast.
+              scalable data processing pipelines in the cloud, and generally,
+              full-stack software development. Besides my main job I also do web
+              & mobile development used to co-host a podcast.
             </p>
             <p className={styles.paragraph}>
               Previously, I was a Data Scientist at{" "}
