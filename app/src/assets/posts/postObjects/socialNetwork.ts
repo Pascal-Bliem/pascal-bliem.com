@@ -12,7 +12,7 @@ export default new Post(
   // titleImageDescription
   "Identifying communities and user importance.",
   // tags
-  ["Data Science", "Learning"],
+  ["Data Science & AI/ML", "Learning"],
   // content
   `A while ago, I felt that, besides advancing my data science knowledge, I also wanted to brush up on my general software engineering skills. Since I had a Java 101 course in my bachelors and Java being somewhat of the embodiment of object orientation, I picked the [*Object Oriented Java Programming: Data Structures and Beyond Specialization*](https://www.coursera.org/specializations/java-object-oriented) on [Coursera.org](https://www.coursera.org/), which consists of five intermediate courses on algorithms and data structures. Besides sorting, searching, lists, and trees, they also focused a whole lot on graphs. This work here is part of the open-ended capstone project of this specialization. I coded up the algorithms from scratch in Java and used NetworkX in Python along with a self-written test class to test my code. You can find all source code on my [Github](https://github.com/Pascal-Bliem/social-network-analysis---communities-and-user-importance).
 

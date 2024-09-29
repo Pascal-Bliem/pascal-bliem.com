@@ -1,5 +1,5 @@
 export type TagsType =
-  | "Data Science"
+  | "Data Science & AI/ML"
   | "Web Development"
   | "Learning"
   | "Non-Tech";

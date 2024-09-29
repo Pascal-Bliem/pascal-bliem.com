@@ -49,11 +49,8 @@ const PostPage = () => {
   // this useEffect calls a util function which adds the table of contents (TOC)
   useEffect(() => {
     if (post) {
-      const {
-        maxWidthHandler,
-        scrollHideHandler,
-        scrollCurrentHandler,
-      } = createTOC();
+      const { maxWidthHandler, scrollHideHandler, scrollCurrentHandler } =
+        createTOC();
 
       return () => {
         window.removeEventListener("resize", maxWidthHandler);
@@ -68,7 +65,7 @@ const PostPage = () => {
     const mathJaxCdn = document.createElement("script");
     mathJaxCdn.type = "text/javascript";
     mathJaxCdn.src =
-      "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML";
     mathJaxCdn.async = false;
     document.body.appendChild(mathJaxCdn);
 

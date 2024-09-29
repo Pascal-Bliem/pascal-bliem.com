@@ -12,7 +12,7 @@ export default new Post(
   // titleImageDescription
   "We are the ChatBorg. Training your neural networks is futile. Your vanishing gradients will be assimilated.",
   // tags
-  ["Data Science", "Learning"],
+  ["Data Science & AI/ML", "Learning"],
   // content
   `**TL;DR:** In this project I tried to train a sequence-to-sequence deep learning model on scripts of all the Star Trek TV shows with the aim to let it generate artificial Star Trek dialogues. I used an encoder-decoder long short-term memory (LSTM) network architecture, which is commonly found in task such as machine translation, question answering, and simple chatbots. The idea is to pass a dialogue line into the encoder and let the decoder generate an appropriate response. Long story short, it didn't work very well and only generates very short sentences without much meaning. I think this may be due to the data set being heavily dominated by few-words-long dialogue lines. Furthermore, free dialogue generation, as opposed to tasks with a clear request-response targets (such as translation or question answering) requires much more of a language understanding. For this, my model (due to my computational resource limitations) is way too simple, and large pretrained, transformer-based models may be a more suitable choice. So if you were looking for cool results, you may stop reading here. However, I found this project to be very educational and a great introduction to seq2seq models, so I decided to turn it into a blog post anyway. If you're interested in it for the sake of learning, please keep reading.
 

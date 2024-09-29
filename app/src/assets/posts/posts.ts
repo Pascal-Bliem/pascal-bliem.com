@@ -1,6 +1,8 @@
 import Post from "./postModel";
 
 const posts: Post[] = [
+  require("./postObjects/decisionTrees").default,
+  require("./postObjects/languageLearning").default,
   require("./postObjects/activityRecognition").default,
   require("./postObjects/maskRCNN").default,
   require("./postObjects/yolo").default,

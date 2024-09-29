@@ -10,6 +10,13 @@ const ProjectSection = () => {
         Key <strong>Projects</strong>
       </h4>
       <div className={`row`}>
+        {/* Unsplash Growtika https://unsplash.com/@growtika  https://unsplash.com/photos/an-abstract-image-of-a-sphere-with-dots-and-lines-nGoCBxiaRO0*/}
+        <ProjectSectionCard
+          linkUrl="/vec-brain"
+          imageUrl="https://pb-data-blogposts.s3.eu-central-1.amazonaws.com/website/vec-brain-card.jpg"
+          title="Vec Brain LLM"
+          description="Vec Brain is a personal knowledge base app using a large language model & RAG to let you store knowledge and create answers and summaries based on your personal notes."
+        />
         {/* Unsplash Brad Jordan https://unsplash.com/photos/U32jeOdkgfA */}
         <ProjectSectionCard
           linkUrl="/doggo-snap"
@@ -44,13 +51,6 @@ const ProjectSection = () => {
           imageUrl="https://images.unsplash.com/photo-1543286386-713bdd548da4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80"
           title="Error Rate Control"
           description="A discussion and simulation study on proper error rate control in statistical hypothesis significance testing, exploring corrections for multiple tests and optional stopping."
-        />
-        {/* Unsplash Will Francis https://unsplash.com/photos/ZDNyhmgkZlQ */}
-        <ProjectSectionCard
-          linkUrl="/suara-jermanesia"
-          imageUrl="https://images.unsplash.com/photo-1589903308904-1010c2294adc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80"
-          title="Podcast"
-          description="In the Suara Jermanesia Podcast, my co-host Gita and I discuss aspects of living in Germany as an Indonesian and vice versa, and share our personal experiences and stories."
         />
       </div>
       <p className={styles.sectionFooter}>

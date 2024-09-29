@@ -12,7 +12,7 @@ export default new Post(
   // titleImageDescription
   "Let's get to know the interactions of effect sizes, sample sizes, power, and errors in statistical tests!",
   // tags
-  ["Data Science", "Learning"],
+  ["Data Science & AI/ML", "Learning"],
   // content
   `In this post I'll describe a project which worked on to improve my own understanding of errors and error control in classic frequentist statistics. You can also find this project on my [Github](https://github.com/Pascal-Bliem/error-control-statistical-tests/) or in an [interactive Jupyter Notebook on mybinder.org](https://mybinder.org/v2/gh/Pascal-Bliem/error-control-statistical-tests/master?filepath=Error_control_in_statistics.ipynb). The latter might be the nicest way to consume this post because it contains interactive visualizations.
 

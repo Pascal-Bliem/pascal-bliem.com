@@ -12,7 +12,7 @@ export default new Post(
   // titleImageDescription
   "Bringing machine learning from research to production with containers and APIs.",
   // tags
-  ["Data Science", "Web Development"],
+  ["Data Science & AI/ML", "Web Development"],
   // content
   `**TL;DR:** I built the open-source [ToxBlock API](https://github.com/Pascal-Bliem/tox-block-api), which serves [ToxBlock](https://github.com/Pascal-Bliem/tox-block), a Python deep learning package for recognizing toxic language in text, as a web service. If you're only interested in the usage of the API, feel free to jump to the [demo section](#usage). If you're interested in why it's a good idea to serve machine learning models via a REST API and how it can be done, just continue reading the rest of this post.
 
@@ -119,7 +119,7 @@ What is a container and why bother using it? Probably everyone who has worked wi
 
 This is where [Docker](https://www.docker.com/) containers come in really handy. They wrap up the entire application, with everything it needs to run, into one entity that can be executed on a runtime (the Docker runtime in this case). No matter where you want to run the application, as long as you have Docker, you can run the container because it already includes everything it needs to run. Containers are more light weight than virtual machines (VM). They don't each need a hypervisor-controlled guest operating system that requires a fixed amount of resources, but run on the Docker engine which itself runs on the host operating system (as sketched in the figure below). Hence, containers are more flexible in resource allocation, they share a single kernel and can share application libraries. They generally have a lower system overhead compared to VMs, resulting in better performance and faster launch times. Finally, containers can be orchestrated to perform optimally together by systems like [Kubernetes](https://kubernetes.io/) or [Docker Swarm](https://docs.docker.com/engine/swarm/).
 
-![A comparison of Docker containers and virtual machines.](https://i1.wp.com/www.docker.com/blog/wp-content/uploads/Blog.-Are-containers-..VM-Image-1-1024x435.png?ssl=1)
+![A comparison of Docker containers and virtual machines.](https://pb-data-blogposts.s3.eu-central-1.amazonaws.com/tox-block/docker-vm.png)
 
 Once Docker is [installed](https://docs.docker.com/get-docker/), creating a container image is fairly easy. All commands need to be included in a [\`Dockerfile\`](https://docs.docker.com/engine/reference/builder/). We'll start building on a Python image that is available on [Docker hub](https://hub.docker.com/), a container image registry:
 \`\`\`dockerfile

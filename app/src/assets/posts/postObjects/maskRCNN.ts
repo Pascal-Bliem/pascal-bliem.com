@@ -6,13 +6,13 @@ export default new Post(
   // subtitle
   "Finding and classifying apparel in images with Mask R-CNNs",
   // publishDate
-  new Date("2021-08-12"),
+  new Date("2021-12-12"),
   // titleImageUrl
   "https://pb-data-blogposts.s3.eu-central-1.amazonaws.com/mask-rcnn/fashion_segmentation.png",
   // titleImageDescription
   "Segment fashion images to let AI figure out what people are wearing!",
   // tags
-  ["Data Science", "Learning"],
+  ["Data Science & AI/ML", "Learning"],
   // content
   `At the moment, I'm super exited about computer vision with Deep Learning, as you can probably tell by looking at most of my last posts. I after my [dog breed classifier](https://pascal-bliem.com/doggo-snap), I recently had a look at object detection with [YOLO](https://pascal-bliem.com/blog/object%20detection%20yolo), and now I'm looking at the somewhat similar problem of instance segmentation. A friend of mine is co-founder of the sustainable fashion startup [La Vouga](https://lavouga.com/), which connects customers in search of ethical and sustainable fashion with independent artisan makers across Europe. We recently talked about how it would be great to find clothing matching certain search terms on their partners' websites, without having to rely on (sometimes weird and heterogenous) product descriptions. If we could just let an AI tag relevant images with the type of apparel and descriptive attributes, this would greatly help customers to find the hand-crafted slow-fashion they're looking for, by just typing what they're looking for or uploading images with similar clothing at La Vouga's search.
 

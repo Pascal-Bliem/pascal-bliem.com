@@ -12,7 +12,7 @@ export default new Post(
   // titleImageDescription
   "Which breed is this?",
   // tags
-  ["Data Science"],
+  ["Data Science & AI/ML"],
   // content
   `**TL;DR:** I scraped a large data set containing about 121k images of 121 different dog breeds to train a CNN deep learning classification model with PyTorch. Starting from a model pretrained on ImageNet, the model performs at about 89% accuracy on validation data, with relatively simple additional training.
 

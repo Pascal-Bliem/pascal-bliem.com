@@ -12,6 +12,7 @@ import ToxBlock from "./components/pages/projects/ToxBlock";
 import Diarysta from "./components/pages/projects/Diarysta";
 import SuaraJermanesia from "./components/pages/projects/SuaraJermanesia";
 import DoggoSnap from "./components/pages/projects/DoggoSnap";
+import VecBrain from "./components/pages/projects/VecBrain";
 
 function App() {
   useEffect(() => {
@@ -30,6 +31,7 @@ function App() {
           <Route exact path="/diarysta" component={Diarysta} />
           <Route exact path="/suara-jermanesia" component={SuaraJermanesia} />
           <Route exact path="/doggo-snap" component={DoggoSnap} />
+          <Route exact path="/vec-brain" component={VecBrain} />
           <Route exact path="/" component={Home} />
         </Switch>
       </div>

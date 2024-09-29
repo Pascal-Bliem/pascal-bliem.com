@@ -12,7 +12,7 @@ export default new Post(
   // titleImageDescription
   "Cut the bulls%@$t !",
   // tags
-  ["Data Science"],
+  ["Data Science & AI/ML"],
   // content
   `**TL;DR:** I built an open-source Python package called \`tox-block\` which can classify English text into six different categories of verbal toxicity. You can download it from the Python package index ([PyPI](https://pypi.org/project/tox-block/)) with \`pip install tox-block\` and find some usage examples in its [repo on Github](https://github.com/Pascal-Bliem/tox-block). If you're interested in the motivation and story behind it, just keep on reading.
 

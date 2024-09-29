@@ -20,9 +20,6 @@ const Footer = ({ acknowledgements }: FooterProps) => {
             <a href="https://www.linkedin.com/in/pascal-bliem/">
               <i className={`fab fa-linkedin ${styles.contactIcon}`}></i>
             </a>
-            <a href="https://twitter.com/BliemPascal">
-              <i className={`fab fa-twitter-square ${styles.contactIcon}`}></i>
-            </a>
             <a href="mailto:pascal@bliem.de">
               <i className={`fas fa-envelope ${styles.contactIcon}`}></i>
             </a>

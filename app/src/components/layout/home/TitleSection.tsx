@@ -12,7 +12,7 @@ const TitleSection = () => {
             Hi, I'm <strong>Pascal</strong>
           </h1>
           <h3 className={styles.titleSubheading} id={styles.tsh1}>
-            {"Data Science & ML/AI"}
+            {"AI/ML & Data Science"}
           </h3>
           <h3 className={styles.titleSubheading} id={styles.tsh2}>
             {"Full Stack Web-Dev"}

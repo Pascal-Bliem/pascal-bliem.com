@@ -12,7 +12,7 @@ export default new Post(
   // titleImageDescription
   "What breed is it? Find out with Doggo Snap!",
   // tags
-  ["Data Science", "Web Development"],
+  ["Data Science & AI/ML", "Web Development"],
   // content
   `**TL;DR:** I built a mobile app called Doggo Snap which can be used for classifying a dog's breed from an image. It provides you with information on the breed and let's you save the dogs you've photographed so that you can have a look at them later and see where you've met them on a map. I created the app using React Native and built it for [Android](https://play.google.com/store/apps/details?id=com.pascalbliem.doggosnap) and iOS (though the iOS version is not available in the app store as of now). For classifying a dog's breed with computer vision, the app calls an API which hosts a Deep Learning model (a convolutional neural network) in the cloud. 
    

@@ -12,7 +12,7 @@ export default new Post(
   // titleImageDescription
   "Let's try to find some data that will help us to decipher Chinese handwriting with ML!",
   // tags
-  ["Data Science"],
+  ["Data Science & AI/ML"],
   // content
   `**TL;DR:** I uploaded data sets with [handwritten](https://www.kaggle.com/pascalbliem/handwritten-chinese-character-hanzi-datasets)  and [handwriting-style font](https://www.kaggle.com/pascalbliem/chinese-characters-from-handwritingstyle-fonts)  Chinese characters on Kaggle, which can be used to train machine learning models for optical character recognition (OCR) on Chinese handwriting. If you're interested in the story behind it, just keep on reading.
 

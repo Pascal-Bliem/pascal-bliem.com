@@ -32,6 +32,13 @@ const Home = () => {
               Images used on this side have kindly been provided by{" "}
               <a
                 className="highlight-link"
+                href="https://unsplash.com/@growtika"
+              >
+                Growtika
+              </a>
+              ,{" "}
+              <a
+                className="highlight-link"
                 href="https://unsplash.com/@markusspiske"
               >
                 Markus Spiske
@@ -123,6 +130,12 @@ const Home = () => {
                 href="https://unsplash.com/@thisisengineering"
               >
                 ThisisEngineering RAEng
+              </a>{" "}
+              <a
+                className="highlight-link"
+                href="https://unsplash.com/@bmetzler2017"
+              >
+                Brian Metzler
               </a>{" "}
               on{" "}
               <a className="highlight-link" href="https://unsplash.com/">

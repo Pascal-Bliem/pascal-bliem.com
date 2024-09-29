@@ -21,14 +21,14 @@ const AboutMeSection = () => {
               About <strong>Me</strong>
             </h4>
             <p className={styles.paragraph}>
-              I'm a Data Scientist, ML & full-stack engineer. I've worked with
+              I'm a Data Scientist, ML/AI & Fullstack Engineer. I've worked with
               AI-powered traffic video analytics, deep learning for computer
               vision, sensor data processing, predictive modelling, web
               front-ends, APIs, and large-scale data processing pipelines set up
-              in the cloud. I'm focused on building end-to-end data products and
-              have done so in both startup and enterprise. Besides work I enjoy
-              building cool tech things, learning new languages, exercising
-              outdoors, and making music.
+              in the cloud. I'm focused on building AI-driven end-to-end data
+              products and have done so in both startup and enterprise. Besides
+              work I enjoy building cool tech things, learning new languages,
+              exercising outdoors, and making music.
             </p>
 
             <div className={styles.iconContainer}>
@@ -49,11 +49,6 @@ const AboutMeSection = () => {
                 </a>
                 <a href="https://www.linkedin.com/in/pascal-bliem/">
                   <i className={`fab fa-linkedin ${styles.contactIcon}`}></i>
-                </a>
-                <a href="https://twitter.com/BliemPascal">
-                  <i
-                    className={`fab fa-twitter-square ${styles.contactIcon}`}
-                  ></i>
                 </a>
                 <a href="mailto:pascal@pascal-bliem.com">
                   <i className={`fas fa-envelope ${styles.contactIcon}`}></i>

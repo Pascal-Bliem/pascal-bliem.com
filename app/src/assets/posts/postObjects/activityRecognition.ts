@@ -6,13 +6,13 @@ export default new Post(
   // subtitle
   "Using signal processing and machine learning to find out what you're doing",
   // publishDate
-  new Date("2021-09-05"),
+  new Date("2022-02-05"),
   // titleImageUrl
   "https://pb-data-blogposts.s3.eu-central-1.amazonaws.com/activity-recognition/activitiyTitle.jpg",
   // titleImageDescription
   "Can your smartphone's sensors tell you what you're doing?",
   // tags
-  ["Data Science", "Learning"],
+  ["Data Science & AI/ML", "Learning"],
   // content
   `**TL;DR:** I used sensor data from smartphones' accelerometers and gyroscopes for human activity recognition by extracting features from their Fourier transform spectrum, power spectral density, and auto-correlation function, and training a XGBoost classifier on these features.
 

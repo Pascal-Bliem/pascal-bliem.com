@@ -12,7 +12,12 @@ const BioSection = () => {
         <div className={`row`}>
           <div className="col s12 m12 l6">
             <p className={styles.paragraph}>
-              I'm currently employed as a Machine Learning Engineer / Data
+              Recently I've pursued a personal goal of mine and invested time to
+              learn Spanish and Chinese, and have also relocated to Taipei. I'm
+              currently open to new professional opportunities in Taiwan.
+            </p>
+            <p className={styles.paragraph}>
+              In my latest role I worked as a Machine Learning Engineer / Data
               Scientist and Full-Stack Engineer at{" "}
               <a className="highlight-link" href="https://www.peregrine.ai/">
                 Peregrine Technologies
@@ -69,13 +74,6 @@ const BioSection = () => {
               research, supplemented by research stays at{" "}
               <a
                 className="highlight-link"
-                href="http://m102.nthu.edu.tw/~s102011510/index.html"
-              >
-                National Tsing Hua University
-              </a>{" "}
-              and{" "}
-              <a
-                className="highlight-link"
                 href="https://www.physics.uu.se/research/materials-physics+/"
               >
                 Uppsala University
@@ -99,7 +97,13 @@ const BioSection = () => {
           <div className={`col s12 m12 l6 ${styles.bioListContainer}`}>
             <ul className={styles.bioList}>
               <li>
-                <span className={styles.bioYear}>Since 2021:</span>
+                <span className={styles.bioYear}>2024:</span>
+                <br />
+                Language Learning & Relocation to Taiwan
+              </li>
+              <li>
+                <br />
+                <span className={styles.bioYear}>2021 - 2023:</span>
                 <br />
                 Machine Learning Engineer at Peregrine Technologies
               </li>
@@ -123,13 +127,13 @@ const BioSection = () => {
               </li>
               <li>
                 <br />
-                <span className={styles.bioYear}>2015 -2018:</span>
+                <span className={styles.bioYear}>2015 - 2018:</span>
                 <br />
                 Master in Materials Engineering at RWTH Aachen University
               </li>
               <li>
                 <br />
-                <span className={styles.bioYear}>2012 -2015:</span>
+                <span className={styles.bioYear}>2012 - 2015:</span>
                 <br />
                 Bachelor in Industrial Engineering at RWTH Aachen University
               </li>

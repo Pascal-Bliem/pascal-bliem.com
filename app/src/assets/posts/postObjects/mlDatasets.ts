@@ -12,7 +12,7 @@ export default new Post(
   // titleImageDescription
   "Finding some new stuff  to learn for our machines.",
   // tags
-  ["Data Science", "Learning"],
+  ["Data Science & AI/ML", "Learning"],
   // content
   `Probably everyone who starts to learn machine learning will, right away, come across plenty of tutorials or blog posts that uses one of maybe a handful of extremely common data set, such as the [Iris flower data set](https://archive.ics.uci.edu/ml/datasets/iris), the [Titanic survivor data set](https://www.kaggle.com/c/titanic), the [Boston Housing data set](https://www.kaggle.com/c/boston-housing), the [MNIST handwritten digits](http://yann.lecun.com/exdb/mnist/), or the [IMDB Movie Reviews](http://ai.stanford.edu/~amaas/data/sentiment/). These data sets are so popular that they're used all over the place, over and over again, and even come delivered with some popular machine learning frameworks such as [Scikit-Learn](https://scikit-learn.org/stable/datasets/index.html) or [Keras](https://keras.io/api/datasets/). They are great for quickly benchmarking or proof-of-concepting a model, but let's face it, they've become pretty boring to everyone who's been emersed in the world of machine learning for a while. There are so many other interesting data sets that are well suited for practicing machine learning problems that have gotten way less attention. Many of which one can find on websites like Kaggle(https://www.kaggle.com/) or the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php). In this post I want to point out some interesting examples (the list is by no means comprehensive) I used for understanding some machine learning concepts.
 

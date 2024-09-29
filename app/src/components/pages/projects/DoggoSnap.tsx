@@ -35,28 +35,16 @@ export const DoggoSnap = () => {
               <a href="https://play.google.com/store/apps/details?id=com.pascalbliem.doggosnap">
                 React Native
               </a>
-              . You can download it from the{" "}
-              <a href="https://play.google.com/store/apps/details?id=com.pascalbliem.doggosnap">
-                Play Store
-              </a>{" "}
-              or{" "}
+              . I don't have it listed on the Play Store or App Store anymore,
+              but feel free to <a href="/#contact">contact</a> me for the app or{" "}
               <strong>
                 <a href="#try">try out</a>
               </strong>{" "}
-              the classification functionality below. Unfortunately, the app is
-              currently not on the Apple App Store (becaus of their audacious
-              fee for a developer account) but feel free to{" "}
-              <a href="/#contact">contact</a> me if you want to have the iOS
-              build. I previously published a couple of resources on the
-              application:
+              the classification functionality below. I previously published a
+              couple of resources on the application:
             </p>
 
             <ul className={styles.paragraph}>
-              <li>
-                <a href="https://play.google.com/store/apps/details?id=com.pascalbliem.doggosnap">
-                  {">"} The Doggo Snap app on Google Play Store
-                </a>
-              </li>
               <li>
                 <a href="https://github.com/Pascal-Bliem/doggo-snap">
                   {">"} The Doggo Snap Github repository

@@ -26,11 +26,11 @@ const Posts = () => {
           Filter:
           <br className={styles.tagLineBreak} />
           <button
-            id="data-science"
-            onClick={() => tagHandler("Data Science")}
+            id="data-science-ai-ml"
+            onClick={() => tagHandler("Data Science & AI/ML")}
             className={styles.tagButton}
           >
-            Data Science
+            Data Science & AI/ML
           </button>
           <button
             id="web-development"

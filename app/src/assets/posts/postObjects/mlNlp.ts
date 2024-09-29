@@ -12,7 +12,7 @@ export default new Post(
   // titleImageDescription
   "Come learn about machine/deep learning and natural language classification!",
   // tags
-  ["Data Science", "Learning"],
+  ["Data Science & AI/ML", "Learning"],
   // content
   `### Check out the talk
 At the CODEx2020 Developer & IT-Expert Conference I gave a talk about Machine Learning, Natural Language Processing (NLP), and Toxic Language Classification with [ToxBlock](http://www.pascal-bliem.com/tox-block), a Python deep learning application I built last spring.

@@ -12,7 +12,7 @@ export default new Post(
   // titleImageDescription
   "The Open Neural Network Exchange (ONNX)",
   // tags
-  ["Data Science", "Web Development"],
+  ["Data Science & AI/ML", "Web Development"],
   // content
   `**TL;DR:** The Open Neural Network Exchange (ONNX) allows to transfer machine learning models into a common format that can easily be exchanged between different frameworks or runtimes. Here, I will show how to export a deep learning model for classifying dog breeds from PyTorch (Python) into the ONNX format and run inference in NodeJS (a JavaScript runtime).
 

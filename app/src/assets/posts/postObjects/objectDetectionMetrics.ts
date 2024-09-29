@@ -6,13 +6,13 @@ export default new Post(
   // subtitle
   "A couple of things we need to know for evaluating object detection models",
   // publishDate
-  new Date("2021-06-16"),
+  new Date("2021-08-16"),
   // titleImageUrl
   "https://pb-data-blogposts.s3.eu-central-1.amazonaws.com/object-detection/boundingboxes.png",
   // titleImageDescription
   "Object detection in action!",
   // tags
-  ["Data Science", "Learning"],
+  ["Data Science & AI/ML", "Learning"],
   // content
   `After my last big project, [Doggo Snap](https://pascal-bliem.com/doggo-snap), a mobile app which uses deep learning to classify dog breeds from photos, I've gotten really exited about the field of computer vision. There is still a lot to explore beyond simple image classification. After being able to tell if something, such as a certain dog breed, is in an image, it would also be nice to tell where in the image it is. This is the problem of object detection or image segmentation. We want to be able to not only classify one or more objects or a section in an image, but also to draw an accurate bounding box around them or detect if a pixel belongs to a certain class. I want to focus on object detection with bounding boxes for now, as can be seen in the title image above.
 

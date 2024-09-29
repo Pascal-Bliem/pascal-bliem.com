@@ -10,6 +10,41 @@ const SkillsSection = () => {
         <strong>Skills</strong> and <strong>Interests</strong>
       </h4>
       <div className={`row`}>
+        {/* Unsplash Arseny Togulev https://unsplash.com/photos/MECKPoKJYjM */}
+        <SkillsSectionCard
+          imageUrl="https://images.unsplash.com/photo-1555255707-c07966088b7b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1490&q=80"
+          title="AI & Machine Learning"
+          iconName="machine-learning"
+          description="Employing state-of-the-art algorithms, such as neural networks and gradient-boosted decision trees, and generative models for predictive analytics and automation."
+          longDescription={
+            <Fragment>
+              <p className={styles.modalParagraph}>
+                The term AI is used to describe a lot of things, but in an
+                applied settings, it usually refers to machine learning (ML); a
+                technique used for all sorts of predictive analytics,
+                classification, language processing, computer vision, and much
+                more. In recent years, large language models like ChatGPT have
+                brought these capabilities to a wide audience.
+              </p>
+              <p className={styles.modalParagraph}>
+                Machine learning models are mathematical/statistical constructs
+                that can be algorithmically trained to recognize patterns in
+                data. The data is a crucial part of machine learning, as the
+                models' internal parameters are mathematically optimized while
+                training data is being passed through them.
+              </p>
+              <p className={styles.modalParagraph}>
+                I train a variety of ML algorithms, such as gradient boosting
+                machines, support vector machines, clustering, neural networks,
+                language models, etc. on data to predict if customers are likely
+                to cancel their contract or to buy a new product, to estimate
+                future usage of a service, to recognize handwriting, to classify
+                sentiment in text, understand traffic scenes and localize road
+                assets, and much more.
+              </p>
+            </Fragment>
+          }
+        />
         {/* Unsplash Luke Chesser https://unsplash.com/photos/JKUTrJ4vK00 */}
         <SkillsSectionCard
           imageUrl="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80"
@@ -35,45 +70,11 @@ const SkillsSection = () => {
               </p>
               <p className={styles.modalParagraph}>
                 I first got into data analysis during my work as a materials
-                scientist and am now applying it in an enterprise setting, in
-                which I facilitate the use of big data with statistical
-                analysis, machine learning, visualization, data processing
-                pipelines, data bases (SQL & NoSQL), and cloud computing
-                solutions.
-              </p>
-            </Fragment>
-          }
-        />
-        {/* Unsplash Arseny Togulev https://unsplash.com/photos/MECKPoKJYjM */}
-        <SkillsSectionCard
-          imageUrl="https://images.unsplash.com/photo-1555255707-c07966088b7b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1490&q=80"
-          title="AI & Machine Learning"
-          iconName="machine-learning"
-          description="Employing state-of-the-art algorithms, such as neural networks and gradient-boosted decision trees, for predictive analytics and classification."
-          longDescription={
-            <Fragment>
-              <p className={styles.modalParagraph}>
-                The term AI is used to describe a lot of things, but in an
-                applied settings, it usually refers to machine learning (ML); a
-                technique used for all sorts of predictive analytics,
-                classification, language processing, computer vision, and much
-                more.
-              </p>
-              <p className={styles.modalParagraph}>
-                Machine learning models are mathematical/statistical constructs
-                that can be algorithmically trained to recognize patterns in
-                data. The data is a crucial part of machine learning, as the
-                models' internal parameters are mathematically optimized while
-                training data is being passed through them.
-              </p>
-              <p className={styles.modalParagraph}>
-                I train a variety of ML algorithms, such as gradient boosting
-                machines, neural networks, support vector machines, clustering
-                etc. on data to predict if customers are likely to cancel their
-                contract or to buy a new product, to estimate future usage of a
-                service, to recognize handwriting, to classify sentiment in
-                text, understand traffic scenes and localize road assets, and
-                much more.
+                scientist and have now applied it in enterprise as well as
+                start-up settings, in which I facilitate the use of big data
+                with statistical analysis, machine learning, visualization, data
+                processing pipelines, data bases (SQL & NoSQL), and cloud
+                computing solutions.
               </p>
             </Fragment>
           }
@@ -97,7 +98,7 @@ const SkillsSection = () => {
                 Providers with a large service catalog, such as Amazon Web
                 Services (AWS), allow entire solution stacks to be constructed,
                 containing object storage, data bases, servers, routing,
-                auto-scaling, load-balancers, or serverless & container
+                auto-scaling, load-balancers, or serverless & containerized
                 services.
               </p>
               <p className={styles.modalParagraph}>
@@ -131,10 +132,10 @@ const SkillsSection = () => {
               <p className={styles.modalParagraph}>
                 Full-stack web development encompasses responsive design of
                 websites and user interfaces with technologies such as HTML,
-                CSS, and JavaScript, development of server-side code to handle
-                serving of sites, routing, and data bases, as well as design of
-                API services that can be integrated into other applications,
-                e.g. for serving machine learning predictions.
+                CSS, and JavaScript/Typescript, development of server-side code
+                to handle serving of sites, routing, and data bases, as well as
+                design of API services that can be integrated into other
+                applications, e.g. for serving machine learning predictions.
               </p>
               <p className={styles.modalParagraph}>
                 I build sites (such as this one here) or mobile apps with the
@@ -147,11 +148,185 @@ const SkillsSection = () => {
             </Fragment>
           }
         />
-        <div
+        {/* <div
           className={`col s12 m12 l6 xl4 show-on-large ${styles.fillerContainer}`}
         >
           <i className={`fas fa-atom ${styles.fillerIcon}`}></i>
-        </div>
+        </div> */}
+        {/* Unsplash ThisisEngineering RAEng https://unsplash.com/photos/mF6gB6hV5OU */}
+        <SkillsSectionCard
+          imageUrl="https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          title="Materials Science"
+          iconName="chemistry"
+          description="During my studies, I did a lot of experimental and computational research in materials science, chemistry, and physics at RWTH Aachen University and Uppsala University."
+          longDescription={
+            <Fragment>
+              <p className={styles.modalParagraph}>
+                The urge to understand what the world around me is made of and
+                how it works has led me to study materials science and
+                engineering, and more generally, physics. I realized that I
+                needed to actively participate in research to really deepen my
+                understand, which is why I picked up a research assistant
+                position already in the second year of my Bachelors.
+              </p>
+              <p className={styles.modalParagraph}>
+                During my research in experimental and computational{" "}
+                <a href="https://www.institut-1a.physik.rwth-aachen.de/">
+                  materials physics
+                </a>{" "}
+                and{" "}
+                <a href="https://www.mch.rwth-aachen.de/">
+                  materials chemistry
+                </a>{" "}
+                , I've developed the faculty of scientific inquiry that still
+                serves me today. I had the chance to conduct research
+                internships at{" "}
+                <a href="https://www.physics.uu.se/research/materials-physics+/">
+                  Uppsala University
+                </a>
+                , and overall, author or coauthor 9{" "}
+                <a href="https://github.com/Pascal-Bliem/my-papers-and-theses#peer-reviewed-publications">
+                  peer-reviewed publications
+                </a>{" "}
+                on synthesis and characterization of nano-scaled materials and
+                thin films for applications in energy generation, electronics,
+                and wear resistance.
+              </p>
+              <p className={styles.modalParagraph}>
+                After this period in academic research, in which I gained the
+                understanding I was looking for, I felt that it was time to
+                shift my professional focus towards more applied tasks. Starting
+                from the programming and statistics skills I acquired in
+                computational research, I improved my software engineering
+                abilities and worked on several machine learning projects, which
+                eventually led up to my current profession as a Data Scientist.
+              </p>
+            </Fragment>
+          }
+        />
+
+        {/* Unsplash Hannah Wright https://unsplash.com/photos/ZzWsHbu2y80  */}
+        <SkillsSectionCard
+          imageUrl="https://images.unsplash.com/photo-1571498664957-fde285d79857?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=564&q=80"
+          title="Language & Cultural Exchange"
+          iconName="language"
+          description="I love to learn about culture and languages. I co-hosted a cultural exchange podcast in Indonesian and also trying to improve my Spanish and Chinese."
+          longDescription={
+            <Fragment>
+              <p className={styles.modalParagraph}>
+                I am fascinated by the new worlds that open up when being
+                immersed into a foreign culture and picking up bits of its
+                language. I've learned English as a second language during my
+                early teenage years and I'm still amazed by how much knowledge
+                it has unlocked for me ever since, ranging from guitar tutorial
+                videos to basically anything that has to do with programming.
+              </p>
+              <p className={styles.modalParagraph}>
+                While I lived in Indonesia, I got fairly fluent in Indonesian,
+                which added so much more quality to my stay there as I was able
+                to deeply connect with my neighbors and learn about their lives.
+                It also helped me with my Malaysian, every time I had to go
+                there for a visa run. I used to co-host the{" "}
+                <a href="http://www.pascal-bliem.com/suarajermanesia">
+                  Suara Jermanesia Podcast
+                </a>{" "}
+                in which we talk (in Indonesian) about the experiences of an
+                Indonesian living in Germany and vice versa. I've also had the
+                wish to learn Spanish since I visited Spain many times as a
+                child. Now after studying it for a while and traveling
+                immersively trough Spain and Latin America, I'm quite fluent at
+                it as well. Living in Taiwan now also sparked my interest in the
+                Chinese language, which I find very difficult though; hence, I'm
+                still far from having elaborate conversations, but I'm getting a
+                little better every day.
+              </p>
+              <p className={styles.modalParagraph}>
+                I've visited around 35 countries and I'm always able to gain
+                some new perspective on life and the world from those visits.
+                Whenever possible, I try to get into contact with locals as much
+                as I can, sometimes through couch surfing or hitchhiking. I
+                think that understanding different cultures allows one to pick
+                the best parts for oneself and become a better human. In case
+                you need a place to stay, contact me on{" "}
+                <a href="https://www.couchsurfing.com/people/pascal-bliem">
+                  Couchsurfing
+                </a>{" "}
+                :)
+              </p>
+            </Fragment>
+          }
+        />
+        {/* Unsplash Brian Metzler https://unsplash.com/@bmetzler2017  */}
+        <SkillsSectionCard
+          imageUrl="https://images.unsplash.com/photo-1498581444814-7e44d2fbe0e2?q=80&w=1998&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          title="Exercise"
+          iconName="dumbbell"
+          description="Exercising helps me counterbalance my sedentary work and experience both health benefits and self-improvement, with a particular love for running outside to connect with nature."
+          longDescription={
+            <Fragment>
+              <p className={styles.modalParagraph}>
+                As a programmer, I spend most of my day sitting, which I've come
+                to realize isn't the best for my body. Our bodies need regular
+                maintenance, just like the machines we work with. That's why
+                I've made exercise an essential part of my routine. Running,
+                weight lifting, and occasionally mixing in activities like
+                hiking, yoga, swimming, biking, or calisthenics, helps me keep
+                my body in shape and counterbalance the sedentary nature of my
+                job.
+              </p>
+              <p className={styles.modalParagraph}>
+                What I love most about exercising is the blend of staying
+                healthy with the tangible sense of self-improvement it offers.
+                There's something very satisfying about watching my performance
+                improve over time. Seeing the numbers go up, whether in the gym
+                or out on the trail, is a constant reminder of my progress.
+              </p>
+              <p className={styles.modalParagraph}>
+                Running outside holds a special place in my heart. It's not just
+                about the physical benefits; it's also a chance to connect with
+                nature. The fresh air (though not so fresh in Taipei), the
+                changing scenery, and the rhythmic gate of my feet on the ground
+                create a meditative experience that recharges my mind and body.
+                It's the perfect way to unwind and feel a deeper connection with
+                the world around me.
+              </p>
+            </Fragment>
+          }
+        />
+        {/* Unsplash Jefferson Santos https://unsplash.com/photos/fCEJGBzAkrU  */}
+        <SkillsSectionCard
+          imageUrl="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          title="Making Music"
+          iconName="guitar"
+          description="I enjoy listening to and making music, mostly playing blues or rock on acoustic or electric guitar or base. I also have a sizeable collection of flutes :D"
+          longDescription={
+            <Fragment>
+              <p className={styles.modalParagraph}>
+                I've been hooked ever since I got my first cheap Stratocaster
+                knock-off. Sure, I had always loved listening to music, but
+                having my first guitar in my hands added a whole new dimension.
+                There is something magical about being able to put your feelings
+                into sound, created by whatever instrument is between your
+                fingers.
+              </p>
+              <p className={styles.modalParagraph}>
+                For me that first love was an electric guitar and blues music.
+                Until today, plain blues is most of what I play, occasionally
+                mixed with rock, hard rock, or metal. I also love the crafty
+                aspect of musical instruments. I've build my favorite guitar
+                myself, even winding the pickup coils and soldering the
+                electronics.
+              </p>
+              <p className={styles.modalParagraph}>
+                Besides electric and acoustic guitar, I've also been fooling
+                around on other instruments, such as base, piano, violin, erhu,
+                and wind or brass instruments. I've made it a habit to bring
+                flutes as souvenirs from my travels, so by now, I have flutes
+                from about 7 different countries.
+              </p>
+            </Fragment>
+          }
+        />
         {/* Unsplash NeONBRAND https://unsplash.com/photos/zFSo6bnZJTw  */}
         <SkillsSectionCard
           imageUrl="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1404&q=80"
@@ -187,148 +362,11 @@ const SkillsSection = () => {
               </p>
               <p className={styles.modalParagraph}>
                 Currently, I try to learn and teach as much as I can from and to
-                my coworkers, support students who do their thesis work in our
-                company, participate in meet-ups, and just generally exchange
-                ideas on tech and science whenever I get the chance. Please
-                don't hesitate to get <a href="#contact">in touch</a> with me!
-              </p>
-            </Fragment>
-          }
-        />
-        {/* Unsplash Hannah Wright https://unsplash.com/photos/ZzWsHbu2y80  */}
-        <SkillsSectionCard
-          imageUrl="https://images.unsplash.com/photo-1571498664957-fde285d79857?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=564&q=80"
-          title="Language & Cultural Exchange"
-          iconName="language"
-          description="I love to learn about culture and languages. I co-hosted a cultural exchange podcast in Indonesian and also trying to improve my Spanish and Chinese."
-          longDescription={
-            <Fragment>
-              <p className={styles.modalParagraph}>
-                I am fascinated by the new worlds that open up when being
-                immersed into a foreign culture and picking up bits of its
-                language. I've learned English as a second language during my
-                early teenage years and I'm still amazed by how much knowledge
-                it has unlocked for me ever since, ranging from guitar tutorial
-                videos to basically anything that has to do with programming.
-              </p>
-              <p className={styles.modalParagraph}>
-                While I lived in Indonesia, I got fairly fluent in Indonesian,
-                which added so much more quality to my stay there as I was able
-                to deeply connect with my neighbors and learn about their lives.
-                It also helped me with my Malaysian, every time I had to go
-                there for a visa run. I used to co-host the{" "}
-                <a href="http://www.pascal-bliem.com/suarajermanesia">
-                  Suara Jermanesia Podcast
-                </a>{" "}
-                in which we talk (in Indonesian) about the experiences of an
-                Indonesian living in Germany and vice versa. Living in Taiwan
-                during a research internship also sparked my interest in the
-                Chinese language, which I find very difficult though; hence, I'm
-                still far from having elaborate conversations. Since I recently
-                also visited Spain a couple of times, I've picked up Spanish as
-                well and have become quite fluent.
-              </p>
-              <p className={styles.modalParagraph}>
-                I've visited almost 30 countries and I'm always able to gain
-                some new perspective on life and the world from those visits.
-                Whenever possible, I try to get into contact with locals as much
-                as I can, sometimes through couch surfing or hitchhiking. I
-                think that understanding different cultures allows one to pick
-                the best parts for oneself and become a better human. In case
-                you need a place to stay, contact me on{" "}
-                <a href="https://www.couchsurfing.com/people/pascal-bliem">
-                  Couchsurfing
-                </a>{" "}
-                :)
-              </p>
-            </Fragment>
-          }
-        />
-        {/* Unsplash Jefferson Santos https://unsplash.com/photos/fCEJGBzAkrU  */}
-        <SkillsSectionCard
-          imageUrl="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-          title="Making Music"
-          iconName="guitar"
-          description="I enjoy listening to and making music, mostly playing blues or rock on acoustic or electric guitar or base. I also have a sizeable collection of flutes :D"
-          longDescription={
-            <Fragment>
-              <p className={styles.modalParagraph}>
-                I've been hooked ever since I got my first cheap Stratocaster
-                knock-off. Sure, I had always loved listening to music, but
-                having my first guitar in my hands added a whole new dimension.
-                There is something magical about being able to put your heart
-                and soul into sound, created by whatever instrument is between
-                your fingers.
-              </p>
-              <p className={styles.modalParagraph}>
-                For me that first love was an electric guitar and blues music.
-                Until today, plain blues is most of what I play, occasionally
-                mixed with rock, hard rock, or metal. I also love the crafty
-                aspect of musical instruments. I've build my favorite guitar
-                myself, even winding the pickup coils and soldering the
-                electronics.
-              </p>
-              <p className={styles.modalParagraph}>
-                Besides electric and acoustic guitar, I've also been fooling
-                around on other instruments, such as base, piano, violin, erhu,
-                and wind or brass instruments. I've made it a habit to bring
-                flutes as souvenirs from my travels, so by now, I have flutes
-                from about five different countries.
-              </p>
-            </Fragment>
-          }
-        />
-        {/* Unsplash ThisisEngineering RAEng https://unsplash.com/photos/mF6gB6hV5OU */}
-        <SkillsSectionCard
-          imageUrl="https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-          title="Materials Science"
-          iconName="chemistry"
-          description="During my studies, I did a lot of experimental and computational research in materials science, chemistry, and physics at RWTH Aachen, Uppsala, and National Tsing Hua Universities."
-          longDescription={
-            <Fragment>
-              <p className={styles.modalParagraph}>
-                The urge to understand what the world around me is made of and
-                how it works has led me to study materials science and
-                engineering, and more generally, physics. I realized that I
-                needed to actively participate in research to really deepen my
-                understand, which is why I picked up a research assistant
-                position already in the second year of my Bachelors.
-              </p>
-              <p className={styles.modalParagraph}>
-                During my research in experimental and computational{" "}
-                <a href="https://www.institut-1a.physik.rwth-aachen.de/">
-                  materials physics
-                </a>{" "}
-                and{" "}
-                <a href="https://www.mch.rwth-aachen.de/">
-                  materials chemistry
-                </a>{" "}
-                , I've developed the faculty of scientific inquiry that still
-                serves me today. I had the chance to conduct research
-                internships at{" "}
-                <a href="http://m102.nthu.edu.tw/~s102011510/index.html">
-                  National Tsing Hua University
-                </a>{" "}
-                and{" "}
-                <a href="https://www.physics.uu.se/research/materials-physics+/">
-                  Uppsala University
-                </a>
-                , and overall, author or coauthor 9{" "}
-                <a href="https://github.com/Pascal-Bliem/my-papers-and-theses#peer-reviewed-publications">
-                  peer-reviewed publications
-                </a>{" "}
-                on synthesis and characterization of nano-scaled materials and
-                thin films for applications in energy generation, electronics,
-                and wear resistance.
-              </p>
-              <p className={styles.modalParagraph}>
-                After this period in academic research, in which I gained the
-                understanding I was looking for, I felt that it was time to
-                shift my professional focus towards more applied tasks. Starting
-                from the programming and statistics skills I acquired in
-                computational research, I improved my software engineering
-                abilities and worked on several machine learning projects, which
-                eventually led up to my current profession as a Data Scientist.
+                my coworkers and friends, support students who do their thesis
+                work with the companies I work for, participate in meet-ups, and
+                just generally exchange ideas on tech and science whenever I get
+                the chance. Please don't hesitate to get{" "}
+                <a href="#contact">in touch</a> with me!
               </p>
             </Fragment>
           }

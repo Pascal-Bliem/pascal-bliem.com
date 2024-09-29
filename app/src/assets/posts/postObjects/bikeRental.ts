@@ -12,7 +12,7 @@ export default new Post(
   // titleImageDescription
   "Why need a car if you can go by bike?",
   // tags
-  ["Data Science", "Learning"],
+  ["Data Science & AI/ML", "Learning"],
   // content
   `### Predicting the usage of bike sharing service as a technical data science challenge in the interviewing process
 

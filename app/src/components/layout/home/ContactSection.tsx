@@ -9,7 +9,7 @@ export interface ContactIconProps {
 
 const ContactIcon = ({ icon, link, text }: ContactIconProps) => {
   return (
-    <div className="col s12 m6 l4">
+    <div className="col s12 m6 l6">
       <a href={link}>
         <div className={styles.contactIconLink}>
           <i
@@ -48,24 +48,14 @@ const ContactSection = () => {
           text="LinkedIn"
         />
         <ContactIcon
-          icon="fab fa-twitter-square"
-          link="https://twitter.com/BliemPascal"
-          text="Twitter"
-        />
-        <ContactIcon
           icon="fas fa-envelope"
           link="mailto:pascal@pascal-bliem.com"
           text="pascal@pascal-bliem.com"
         />
         <ContactIcon
-          icon="fab fa-whatsapp"
-          link="tel:+491781128156"
-          text="+491781128156"
-        />
-        <ContactIcon
-          icon="fab fa-skype"
-          link="skype:pascal.bliem?add"
-          text="pascal.bliem"
+          icon="fa-brands fa-line"
+          link="tel:+886919140587"
+          text="+886 919140587"
         />
       </div>
       <p className={styles.sectionFooter}>

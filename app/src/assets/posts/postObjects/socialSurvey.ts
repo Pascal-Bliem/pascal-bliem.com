@@ -12,7 +12,7 @@ export default new Post(
   // titleImageDescription
   "Let's explore social trends, attitudes, and behaviours throughout Europe!",
   // tags
-  ["Data Science"],
+  ["Data Science & AI/ML"],
   // content
   `In this full-stack data science project, we will analyze the 8th European Social Survey. In case you want to explore this project more interactively, you can find the Jupyter Notebook and the data on my [Github](https://github.com/Pascal-Bliem/european-social-survey). After a contextual [introduction](#introduction), we will start with [data selection and cleaning](#data), followed by interactive [visualization and exploration](#viz). In the second half of the project, we will gain deeper insights by employing [statistical inference](#stats) and [machine learning](#ml) methods.
 

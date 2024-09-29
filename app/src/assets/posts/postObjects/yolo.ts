@@ -6,13 +6,13 @@ export default new Post(
   // subtitle
   'Understand and implement the "You only look once" model',
   // publishDate
-  new Date("2021-07-11"),
+  new Date("2021-10-11"),
   // titleImageUrl
   "https://pb-data-blogposts.s3.eu-central-1.amazonaws.com/object-detection/yolocover.png",
   // titleImageDescription
   "You only look once, so you better make the most of it!",
   // tags
-  ["Data Science", "Learning"],
+  ["Data Science & AI/ML", "Learning"],
   // content
   `As I already mentioned in a [previous post](https://pascal-bliem.com/blog/object%20detection%20metrics), after creating the [Doggo Snap](https://pascal-bliem.com/doggo-snap) app, I've become a lot more interested in computer vision tasks that can be solved by deep learning. One obvious example is object detection, where we want to detect certain objects in an image and figure out where exactly they are in the image. Imagine you're a robot with a camera as eyes and you need to figure out what to pick up and where it stands. That's where deep learning with convolutional neural network comes in very handy. In the [previous post](https://pascal-bliem.com/blog/object%20detection%20metrics), I've cover the concept of bounding boxes in object detection in detail, now we'll have a look at how we can build a model that predicts these bounding boxes around objects.
 
